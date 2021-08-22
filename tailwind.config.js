@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       spacing: {
         18: "4.5rem",
+        55: "13.75rem",
       },
       colors: {
         "interactive-normal": "#b9bbbe",
         "interactive-hover": "#dcddde",
+        muted: "#72767d",
       },
       backgroundColor: {
         tertiary: "#202225",
