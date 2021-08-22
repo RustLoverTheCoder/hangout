@@ -42,3 +42,8 @@
   @apply h-full;
   @apply w-full;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

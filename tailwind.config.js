@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        13: "3.25rem",
         18: "4.5rem",
         55: "13.75rem",
       },
@@ -11,6 +12,8 @@ module.exports = {
         "interactive-normal": "#b9bbbe",
         "interactive-hover": "#dcddde",
         muted: "#72767d",
+        "header-primary": "#fff",
+        "header-secondary": "#b9bbbe",
       },
       backgroundColor: {
         tertiary: "#202225",
