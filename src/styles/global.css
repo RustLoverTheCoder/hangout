@@ -19,6 +19,7 @@
     overflow-y: scroll;
     @apply h-full;
     @apply w-full;
+    @apply select-none;
   }
 
   body {
@@ -33,6 +34,7 @@
     font-kerning: normal;
     @apply h-full;
     @apply w-full;
+    @apply select-none;
   }
 }
 

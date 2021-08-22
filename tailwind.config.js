@@ -6,7 +6,10 @@ module.exports = {
       spacing: {
         18: "4.5rem",
       },
-      color: {},
+      colors: {
+        "interactive-normal": "#b9bbbe",
+        "interactive-hover": "#dcddde",
+      },
       backgroundColor: {
         tertiary: "#202225",
         secondary: "#2f3136",
