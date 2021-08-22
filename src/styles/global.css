@@ -35,6 +35,10 @@
     @apply h-full;
     @apply w-full;
     @apply select-none;
+    @apply bg-transparent;
+  }
+  button {
+
   }
 }
 
