@@ -1,13 +1,17 @@
 import * as React from "react"
 import { IoHelpCircleSharp, IoMail, IoAccessibility } from "react-icons/io5"
+import { Link } from "gatsby"
 
 const ChatHeader = () => {
   return (
     <div className="w-full h-12 bg-primary flex justify-between items-center shadow px-2 text-interactive-normal">
       <div className="flex">
-        <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
+        <Link
+          to="/app/#xx"
+          className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold"
+        >
           好友
-        </div>
+        </Link>
         <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
           在线
         </div>
