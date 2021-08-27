@@ -1,6 +1,7 @@
 import * as React from "react"
 import ChannelHeader from "../components/ChannelHeader"
 import ChannelUser from "../components/ChannelUser"
+import ChannelUserList from "../components/ChannelUserList"
 
 const ChannelLayout = () => {
   const searchMoveUser = () => (
@@ -21,7 +22,9 @@ const ChannelLayout = () => {
   return (
     <div className="w-60 h-full bg-secondary flex flex-col justify-between">
       {searchMoveUser()}
-      <div className="flex-1 h-auto" />
+      <div className="flex-1 h-auto overflow-y-auto">
+        <ChannelUserList />
+      </div>
       <ChannelUser />
     </div>
   )
