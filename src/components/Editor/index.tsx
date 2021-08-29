@@ -1,4 +1,5 @@
 import * as React from "react"
+const isBrowser = typeof window !== "undefined"
 import {
   BoldExtension,
   ItalicExtension,
@@ -18,6 +19,9 @@ const extensions = () => [
 ]
 
 const Editor = () => {
+  if (!isBrowser) {
+    return false
+  }
   const { manager, onChange, state } = useRemirror({
     extensions,
     content: "<p>Hi</p>",
