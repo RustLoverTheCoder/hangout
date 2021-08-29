@@ -7,9 +7,11 @@ interface PropsTypes {
 
 const ChatContainerLayout = ({ children }: PropsTypes) => {
   return (
-    <div>
-      {children}
-      <Editor />
+    <div className="flex flex-col justify-between w-full h-full">
+      <div>{children}</div>
+      <div className="w-full px-4 mb-6">
+        <Editor />
+      </div>
     </div>
   )
 }

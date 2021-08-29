@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@remirror/pm": "^1.0.2",
+    "@remirror/react": "^1.0.5",
     "autoprefixer": "^10.3.1",
     "gatsby": "^3.11.1",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
@@ -25,6 +27,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-query": "^3.21.0",
+    "remirror": "^1.0.14",
     "tailwindcss": "^2.2.7",
     "use-query-params": "^1.2.3",
     "zustand": "^3.5.9"
