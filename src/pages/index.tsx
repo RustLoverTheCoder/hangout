@@ -1,10 +1,9 @@
 import * as React from "react"
-const isBrowser = typeof window !== "undefined"
 import { PageProps } from "gatsby"
 
 import BaseLayout from "../layouts/baseLayout"
-const ChannelLayout = React.lazy(() => import('../layouts/ChannelLayout'))
-const ChatLayout = React.lazy(() => import("../layouts/ChatLayout"))
+import ChannelLayout from '../layouts/ChannelLayout'
+import ChatLayout from "../layouts/ChatLayout"
 
 type DataProps = {
   site: {
@@ -16,8 +15,8 @@ type DataProps = {
 
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <BaseLayout>
-    {isBrowser && <ChannelLayout />}
-    {isBrowser && <ChatLayout />}
+    <ChannelLayout />
+    <ChatLayout />
   </BaseLayout>
 )
 
