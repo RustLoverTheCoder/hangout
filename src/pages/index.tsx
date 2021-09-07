@@ -1,4 +1,5 @@
 import * as React from "react"
+const isBrowser = typeof window !== "undefined"
 import { PageProps } from "gatsby"
 
 import BaseLayout from "../layouts/baseLayout"
@@ -15,8 +16,8 @@ type DataProps = {
 
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <BaseLayout>
-    <ChannelLayout />
-    <ChatLayout />
+    {isBrowser && <ChannelLayout />}
+    {isBrowser && <ChatLayout />}
   </BaseLayout>
 )
 

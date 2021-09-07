@@ -1,5 +1,5 @@
 import * as React from "react"
-
+const isBrowser = typeof window !== "undefined"
 const Server = React.lazy(() => import("../components/Server"))
 
 interface PropsTypes {
@@ -9,7 +9,7 @@ interface PropsTypes {
 const BaseLayout = ({ children }: PropsTypes) => {
   return (
     <div className="flex w-full h-full">
-      <Server />
+      {isBrowser && <Server />}
       <div className="flex flex-1">
         {children}
       </div>

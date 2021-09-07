@@ -1,4 +1,5 @@
 import * as React from "react"
+const isBrowser = typeof window !== "undefined"
 const ChannelHeader = React.lazy(() => import("../components/ChannelHeader"))
 const ChannelUser = React.lazy(() => import("../components/ChannelUser"))
 const ChannelUserList = React.lazy(() => import("../components/ChannelUserList"))
@@ -21,12 +22,12 @@ const ChannelLayout = () => {
 
   return (
     <div className="w-60 h-full bg-secondary flex flex-col justify-between">
-      {searchMoveUser()}
+      {isBrowser && searchMoveUser()}
       <div className="flex-1 h-auto overflow-y-auto">
         <div className="h-2" />
-        <ChannelUserList />
+        {isBrowser && <ChannelUserList />}
       </div>
-      <ChannelUser />
+      {isBrowser && <ChannelUser />}
     </div>
   )
 }
