@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        4.5: "1.125rem",
+        10.5: "2.625rem",
         13: "3.25rem",
         18: "4.5rem",
         34: "8.5rem",
@@ -20,6 +22,7 @@ module.exports = {
         tertiary: "#202225",
         secondary: "#2f3136",
         primary: "#36393f",
+        "modifier-selected": "rgba(79,84,92,0.32)",
       },
     },
   },
