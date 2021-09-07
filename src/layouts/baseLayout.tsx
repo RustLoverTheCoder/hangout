@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Server from "../components/Server"
+const Server = React.lazy(() => import("../components/Server"))
 
 interface PropsTypes {
   children: React.ReactElement | Array<React.ReactElement>

@@ -1,7 +1,7 @@
 import * as React from "react"
-import ChannelHeader from "../components/ChannelHeader"
-import ChannelUser from "../components/ChannelUser"
-import ChannelUserList from "../components/ChannelUserList"
+const ChannelHeader = React.lazy(() => import("../components/ChannelHeader"))
+const ChannelUser = React.lazy(() => import("../components/ChannelUser"))
+const ChannelUserList = React.lazy(() => import("../components/ChannelUserList"))
 
 const ChannelLayout = () => {
   const searchMoveUser = () => (

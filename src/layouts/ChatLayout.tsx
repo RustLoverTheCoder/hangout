@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import ChatHeader from "../components/ChatHeader"
-import ChatContainerLayout from "./ChatContainerLayout"
+const ChatHeader = React.lazy(() => import("../components/ChatHeader"))
+const ChatContainerLayout = React.lazy(() => import("./ChatContainerLayout"))
 
 const ChatLayout = () => {
   return (
