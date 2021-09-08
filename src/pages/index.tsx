@@ -4,6 +4,7 @@ import { PageProps } from "gatsby"
 import BaseLayout from "../layouts/baseLayout"
 import ChannelLayout from '../layouts/ChannelLayout'
 import ChatLayout from "../layouts/ChatLayout"
+import Seo from '../components/seo'
 
 type DataProps = {
   site: {
@@ -15,6 +16,7 @@ type DataProps = {
 
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <BaseLayout>
+    <Seo />
     <ChannelLayout />
     <ChatLayout />
   </BaseLayout>
