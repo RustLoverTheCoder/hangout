@@ -16,7 +16,7 @@ type DataProps = {
 
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <BaseLayout>
-    <Seo />
+    <Seo title="Home" />
     <ChannelLayout />
     <ChatLayout />
   </BaseLayout>
