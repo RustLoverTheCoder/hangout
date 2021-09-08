@@ -34,17 +34,18 @@ const Editor = () => {
       className="w-full rounded-lg flex items-start"
       style={{ background: "#40444b", minHeight: "44px" }}
     >
-      <div className="w-14 h-11 flex justify-center items-center flex-shrink-0">
-        <IoAddCircleSharp className="text-2xl text-interactive-normal hover:text-interactive-hover" />
-      </div>
-      <div className="flex-1 text-interactive-normal py-2.5">
+      <div className="flex-1 text-interactive-normal py-2.5 bg-white">
         <Remirror
           onChange={onChange}
           manager={manager}
           initialContent={state}
-          classNames={["outline-none"]}
+          // classNames={["outline-none"]}
         />
       </div>
+      {/* <div className="w-14 h-11 flex justify-center items-center flex-shrink-0">
+        <IoAddCircleSharp className="text-2xl text-interactive-normal hover:text-interactive-hover" />
+      </div>
+  
       <div className="flex flex-shrink-0 h-11">
         <div className="w-11 h-11 flex justify-center items-center">
           <BiGift className="text-2xl text-interactive-normal hover:text-interactive-hover" />
@@ -58,7 +59,7 @@ const Editor = () => {
         <div className="w-11 h-11 flex justify-center items-center">
           <BiHappy className="text-2xl text-interactive-normal hover:text-interactive-hover" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
