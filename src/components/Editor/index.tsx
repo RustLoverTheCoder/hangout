@@ -3,7 +3,6 @@ const isBrowser = typeof window !== "undefined"
 import {
   BoldExtension,
   ItalicExtension,
-  UnderlineExtension,
   PlaceholderExtension
 } from "remirror/extensions"
 import { Remirror, useRemirror } from "@remirror/react"
@@ -16,8 +15,7 @@ import "remirror/styles/all.css"
 const extensions = () => [
   new BoldExtension(),
   new ItalicExtension(),
-  new UnderlineExtension(),
-  new PlaceholderExtension({ placeholder: 'Hi' })
+  new PlaceholderExtension({ placeholder: `Hi!`, emptyNodeClass: 'pupu-placeholder', })
 ]
 
 const Editor = () => {
