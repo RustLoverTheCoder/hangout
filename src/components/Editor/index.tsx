@@ -9,6 +9,7 @@ import { Remirror, useRemirror } from "@remirror/react"
 import { IoAddCircleSharp } from "react-icons/io5"
 import { BiHappy, BiSticker, BiGift } from "react-icons/bi"
 import { AiOutlineGif } from "react-icons/ai"
+import { GrSend } from 'react-icons/gr'
 
 import "remirror/styles/all.css"
 
@@ -22,7 +23,7 @@ const Editor = () => {
   if (!isBrowser) {
     return false
   }
-  const { manager} = useRemirror({
+  const { manager } = useRemirror({
     extensions,
   })
 
@@ -41,16 +42,19 @@ const Editor = () => {
         />
       </div>
       <div className="flex flex-shrink-0 h-11">
-        <div className="w-11 h-11 flex justify-center items-center">
+        <div className="w-11 h-11 flex justify-center items-center md:hidden">
+          <GrSend className="text-2xl text-interactive-normal hover:text-interactive-hover" />
+        </div>
+        <div className="w-11 h-11  hidden md:flex justify-center items-center">
           <BiGift className="text-2xl text-interactive-normal hover:text-interactive-hover" />
         </div>
-        <div className="w-11 h-11 flex justify-center items-center">
+        <div className="w-11 h-11 hidden md:flex justify-center items-center">
           <AiOutlineGif className="text-2xl text-interactive-normal hover:text-interactive-hover" />
         </div>
-        <div className="w-11 h-11 flex justify-center items-center">
+        <div className="w-11 h-11 hidden md:flex justify-center items-center">
           <BiSticker className="text-2xl text-interactive-normal hover:text-interactive-hover" />
         </div>
-        <div className="w-11 h-11 flex justify-center items-center">
+        <div className="w-11 h-11 hidden md:flex justify-center items-center">
           <BiHappy className="text-2xl text-interactive-normal hover:text-interactive-hover" />
         </div>
       </div>
