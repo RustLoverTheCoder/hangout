@@ -13,16 +13,18 @@ import { RiSendPlaneFill } from 'react-icons/ri'
 
 import "remirror/styles/all.css"
 
-const extensions = () => [
-  new BoldExtension(),
-  new ItalicExtension(),
-  new PlaceholderExtension({ placeholder: `Hi!` })
-]
 
 const Editor = () => {
   if (!isBrowser) {
     return false
   }
+  
+  const extensions = () => [
+    new BoldExtension(),
+    new ItalicExtension(),
+    new PlaceholderExtension({ placeholder: `Hi!` })
+  ]
+  
   const { manager } = useRemirror({
     extensions,
   })
