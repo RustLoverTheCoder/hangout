@@ -4,7 +4,7 @@ import { navigate } from "gatsby"
 
 const ServerItem = () => {
   return (
-    <div className="w-full h-14 flex justify-center items-center text-white flex-shrink-0" onClick={() => navigate('/app/#me')}>
+    <div className="w-full h-14 flex justify-center items-center text-white flex-shrink-0 cursor-pointer" onClick={() => navigate('/#severId')}>
       <StaticImage
         src="../../images/gatsby-icon.png"
         width={48}
