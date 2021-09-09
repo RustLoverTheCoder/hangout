@@ -15,17 +15,15 @@ import "remirror/styles/all.css"
 const extensions = () => [
   new BoldExtension(),
   new ItalicExtension(),
-  new PlaceholderExtension({ placeholder: `Hi!`, emptyNodeClass: 'pupu-placeholder', })
+  new PlaceholderExtension({ placeholder: `Hi!` })
 ]
 
 const Editor = () => {
   if (!isBrowser) {
     return false
   }
-  const { manager, onChange, state } = useRemirror({
+  const { manager} = useRemirror({
     extensions,
-    stringHandler: "html",
-    selection: "end",
   })
 
   return (
@@ -38,9 +36,7 @@ const Editor = () => {
       </div>
       <div className="flex-1 text-interactive-normal py-2.5">
         <Remirror
-          onChange={onChange}
           manager={manager}
-          initialContent={state}
           classNames={["outline-none"]}
         />
       </div>
