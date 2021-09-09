@@ -18,13 +18,13 @@ const Editor = () => {
   if (!isBrowser) {
     return false
   }
-  
-  const extensions = () => [
+
+  const extensions = () => React.useCallback(() => [
     new BoldExtension(),
     new ItalicExtension(),
     new PlaceholderExtension({ placeholder: `Hi!` })
-  ]
-  
+  ], [])
+
   const { manager } = useRemirror({
     extensions,
   })
