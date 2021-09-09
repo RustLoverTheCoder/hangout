@@ -4,6 +4,7 @@ import {
   BoldExtension,
   ItalicExtension,
   UnderlineExtension,
+  PlaceholderExtension
 } from "remirror/extensions"
 import { Remirror, useRemirror } from "@remirror/react"
 import { IoAddCircleSharp } from "react-icons/io5"
@@ -16,6 +17,7 @@ const extensions = () => [
   new BoldExtension(),
   new ItalicExtension(),
   new UnderlineExtension(),
+  new PlaceholderExtension({ placeholder: 'Hi' })
 ]
 
 const Editor = () => {
@@ -24,7 +26,6 @@ const Editor = () => {
   }
   const { manager, onChange, state } = useRemirror({
     extensions,
-    content: "<p>Hi</p>",
     stringHandler: "html",
     selection: "end",
   })
