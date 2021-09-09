@@ -12,6 +12,7 @@ import { RiSendPlaneFill } from "react-icons/ri"
 const extensions = () => [new BoldExtension(), new ItalicExtension(), new UnderlineExtension()]
 
 const Editor = () => {
+  if(!isBrowser) return null
   // const extensions = React.useCallback(
   //   () => [new PlaceholderExtension({ placeholder: "<p>Hi</p>" }), new BoldExtension(), new ItalicExtension(), new UnderlineExtension()],
   //   []
