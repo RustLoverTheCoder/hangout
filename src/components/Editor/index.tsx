@@ -1,5 +1,6 @@
 import "remirror/styles/all.css"
 import * as React from "react"
+
 const isBrowser = typeof window !== "undefined"
 import { PlaceholderExtension } from "remirror/extensions"
 import { Remirror, useRemirror } from "@remirror/react"
@@ -10,15 +11,14 @@ import { RiSendPlaneFill } from "react-icons/ri"
 
 const Editor = () => {
   const extensions = React.useCallback(
-    () => [new PlaceholderExtension({ placeholder: `Hi!` })],
+    () => [new PlaceholderExtension({placeholder:'123'})],
     []
   )
 
   const { manager } = useRemirror({
     extensions,
     selection: "end",
-    stringHandler: "html",
-
+    stringHandler: "html"
   })
 
   return (
