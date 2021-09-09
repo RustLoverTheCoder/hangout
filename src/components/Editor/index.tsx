@@ -1,3 +1,4 @@
+import "remirror/styles/all.css"
 import * as React from "react"
 const isBrowser = typeof window !== "undefined"
 import {
@@ -5,19 +6,17 @@ import {
   ItalicExtension,
   PlaceholderExtension
 } from "remirror/extensions"
-import { Remirror, useRemirror } from "@remirror/react"
+import { Remirror, useRemirror, ReactExtensions } from "@remirror/react"
 import { IoAddCircleSharp } from "react-icons/io5"
 import { BiHappy, BiSticker, BiGift } from "react-icons/bi"
 import { AiOutlineGif } from "react-icons/ai"
 import { RiSendPlaneFill } from 'react-icons/ri'
 
-import "remirror/styles/all.css"
+
 
 
 const Editor = () => {
-  if (!isBrowser) {
-    return false
-  }
+
 
   const extensions = React.useCallback(() => [
     new BoldExtension(),
@@ -27,9 +26,11 @@ const Editor = () => {
 
   const { manager } = useRemirror({
     extensions,
+    selection: 'end',
+    stringHandler: 'html',
   })
 
-  return (
+  return !isBrowser && (
     <div
       className="w-full rounded-lg flex items-start"
       style={{ background: "#40444b", minHeight: "44px" }}
