@@ -1061,7 +1061,7 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@emotion/babel-plugin@^11.0.0":
+"@emotion/babel-plugin@^11.0.0", "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.3.0.tgz#3a16850ba04d8d9651f07f3fb674b3436a4fb9d7"
   integrity sha512-UZKwBV2rADuhRp+ZOGgNWg2eYgbzKzQXfQPtJbu/PLy8onurxlNCLvxMQEvlr1/GudguPI5IU9qIY1+2z1M5bA==
@@ -1079,7 +1079,7 @@
     source-map "^0.5.7"
     stylis "^4.0.3"
 
-"@emotion/cache@^11.1.3":
+"@emotion/cache@^11.1.3", "@emotion/cache@^11.4.0":
   version "11.4.0"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-11.4.0.tgz#293fc9d9a7a38b9aad8e9337e5014366c3b09ac0"
   integrity sha512-Zx70bjE7LErRO9OaZrhf22Qye1y4F7iDl+ITjet0J+i+B88PrAOBkKvaAWhxsZf72tDLajwCgfCjJ2dvH77C3g==
@@ -1106,10 +1106,30 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
+"@emotion/is-prop-valid@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/@emotion/is-prop-valid/download/@emotion/is-prop-valid-1.1.0.tgz?cache=0&sync_timestamp=1612610437261&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40emotion%2Fis-prop-valid%2Fdownload%2F%40emotion%2Fis-prop-valid-1.1.0.tgz#29ef6be1e946fb4739f9707def860f316f668cde"
+  integrity sha1-Ke9r4elG+0c5+XB974YPMW9mjN4=
+  dependencies:
+    "@emotion/memoize" "^0.7.4"
+
 "@emotion/memoize@^0.7.4", "@emotion/memoize@^0.7.5":
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.5.tgz#2c40f81449a4e554e9fc6396910ed4843ec2be50"
   integrity sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
+
+"@emotion/react@^11.4.1":
+  version "11.4.1"
+  resolved "https://registry.nlark.com/@emotion/react/download/@emotion/react-11.4.1.tgz?cache=0&sync_timestamp=1628416264942&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40emotion%2Freact%2Fdownload%2F%40emotion%2Freact-11.4.1.tgz#a1b0b767b5bad57515ffb0cad9349614d27f4d57"
+  integrity sha1-obC3Z7W61XUV/7DK2TSWFNJ/TVc=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@emotion/cache" "^11.4.0"
+    "@emotion/serialize" "^1.0.2"
+    "@emotion/sheet" "^1.0.2"
+    "@emotion/utils" "^1.0.0"
+    "@emotion/weak-memoize" "^0.2.5"
+    hoist-non-react-statics "^3.3.1"
 
 "@emotion/serialize@^1.0.0", "@emotion/serialize@^1.0.2":
   version "1.0.2"
@@ -1122,10 +1142,21 @@
     "@emotion/utils" "^1.0.0"
     csstype "^3.0.2"
 
-"@emotion/sheet@^1.0.0":
+"@emotion/sheet@^1.0.0", "@emotion/sheet@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@emotion/sheet/-/sheet-1.0.2.tgz#1d9ffde531714ba28e62dac6a996a8b1089719d0"
   integrity sha512-QQPB1B70JEVUHuNtzjHftMGv6eC3Y9wqavyarj4x4lg47RACkeSfNo5pxIOKizwS9AEFLohsqoaxGQj4p0vSIw==
+
+"@emotion/styled@^11.3.0":
+  version "11.3.0"
+  resolved "https://registry.npm.taobao.org/@emotion/styled/download/@emotion/styled-11.3.0.tgz?cache=0&sync_timestamp=1617886937844&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40emotion%2Fstyled%2Fdownload%2F%40emotion%2Fstyled-11.3.0.tgz#d63ee00537dfb6ff612e31b0e915c5cf9925a207"
+  integrity sha1-1j7gBTfftv9hLjGw6RXFz5klogc=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@emotion/babel-plugin" "^11.3.0"
+    "@emotion/is-prop-valid" "^1.1.0"
+    "@emotion/serialize" "^1.0.2"
+    "@emotion/utils" "^1.0.0"
 
 "@emotion/unitless@^0.7.5":
   version "0.7.5"
@@ -1890,6 +1921,23 @@
     nanoevents "^5.1.13"
     tiny-warning "^1.0.3"
 
+"@remirror/core@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.nlark.com/@remirror/core/download/@remirror/core-1.1.1.tgz#8b38a59ce0daf40dc159f79ac7068cdc44443de6"
+  integrity sha1-izilnODa9A3BWfeaxwaM3EREPeY=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@linaria/core" "3.0.0-beta.4"
+    "@remirror/core-constants" "^1.0.0"
+    "@remirror/core-helpers" "^1.0.1"
+    "@remirror/core-types" "^1.0.1"
+    "@remirror/core-utils" "^1.1.0"
+    "@remirror/i18n" "^1.0.3"
+    "@remirror/icons" "^1.0.2"
+    "@remirror/messages" "^1.0.2"
+    nanoevents "^5.1.13"
+    tiny-warning "^1.0.3"
+
 "@remirror/dom@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@remirror/dom/-/dom-1.0.3.tgz#bd778d45e290a419d7e27287d68e2f8cc152d335"
@@ -1898,6 +1946,15 @@
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
     "@remirror/preset-core" "^1.0.3"
+
+"@remirror/dom@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/dom/download/@remirror/dom-1.0.6.tgz#8e48fe0e3416bb1063db95470454b5dbf8d4bc33"
+  integrity sha1-jkj+DjQWuxBj25VHBFS12/jUvDM=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/preset-core" "^1.0.6"
 
 "@remirror/extension-annotation@^1.0.3":
   version "1.0.3"
@@ -1909,6 +1966,16 @@
     "@remirror/extension-positioner" "^1.1.0"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-annotation@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/extension-annotation/download/@remirror/extension-annotation-1.0.6.tgz#3f5db4a8a745db83ebeb1cbad4921eeb9eaf9213"
+  integrity sha1-P120qKdF24Pr6xy61JIe656vkhM=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-bidi@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-bidi/-/extension-bidi-1.0.2.tgz#5f04082aae346f8c0c82976acf50aa2f7d81a124"
@@ -1916,6 +1983,17 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+    "@types/direction" "^1.0.0"
+    direction "^1.0.4"
+
+"@remirror/extension-bidi@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-bidi/download/@remirror/extension-bidi-1.0.4.tgz#99c57a6afab6ad0cccce1417c6092e70055494dc"
+  integrity sha1-mcV6avq2rQzMzhQXxgkucAVUlNw=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
     "@types/direction" "^1.0.0"
     direction "^1.0.4"
@@ -1930,6 +2008,16 @@
     "@remirror/messages" "^1.0.2"
     "@remirror/theme" "^1.1.0"
 
+"@remirror/extension-blockquote@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-blockquote/download/@remirror/extension-blockquote-1.0.5.tgz#dcb14f7fb4cafe5a0c4dc9fdc25b076ef338ce5c"
+  integrity sha1-3LFPf7TK/loMTcn9wlsHbvM4zlw=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+
 "@remirror/extension-bold@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-bold/-/extension-bold-1.0.2.tgz#f5245825bf98e7566b80a141384ba42ea3b33ce5"
@@ -1937,6 +2025,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-bold@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-bold/download/@remirror/extension-bold-1.0.4.tgz#5ee1c9224b6f9a24cecb030c34625c61b47f4b01"
+  integrity sha1-XuHJIktvmiTOywMMNGJcYbR/SwE=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-callout@^1.0.2":
@@ -1948,6 +2045,16 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
     "@remirror/theme" "^1.1.0"
+
+"@remirror/extension-callout@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-callout/download/@remirror/extension-callout-1.0.5.tgz#75739db0e9fcc865d2a0fd37638ff65cd703d578"
+  integrity sha1-dXOdsOn8yGXSoP03Y4/2XNcD1Xg=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
 
 "@remirror/extension-code-block@^1.0.3":
   version "1.0.3"
@@ -1961,6 +2068,18 @@
     "@types/refractor" "^3.0.2"
     refractor "^3.3.1"
 
+"@remirror/extension-code-block@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/extension-code-block/download/@remirror/extension-code-block-1.0.6.tgz#e915790ac53823db1f4a17dd116a9d13303b9487"
+  integrity sha1-6RV5CsU4I9sfShfdEWqdEzA7lIc=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+    "@types/refractor" "^3.0.2"
+    refractor "^3.3.1"
+
 "@remirror/extension-code@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-code/-/extension-code-1.0.2.tgz#f9b715aca56a85f230bb23d77dbdb01f20e1a3ae"
@@ -1968,6 +2087,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-code@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-code/download/@remirror/extension-code-1.0.4.tgz#5014973b6c5c2c2d3b47781a140379b4d9f0426c"
+  integrity sha1-UBSXO2xcLC07R3gaFAN5tNnwQmw=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-codemirror5@^1.0.2":
@@ -1979,6 +2107,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-codemirror5@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-codemirror5/download/@remirror/extension-codemirror5-1.0.4.tgz#ee805ab44ec6c2d5e517e06c2edf380ac66b3762"
+  integrity sha1-7oBatE7GwtXlF+BsLt84CsZrN2I=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-collaboration@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-collaboration/-/extension-collaboration-1.0.2.tgz#deacbaf9e71273b1570bde59bab255f28473785d"
@@ -1986,6 +2123,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-collaboration@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-collaboration/download/@remirror/extension-collaboration-1.0.4.tgz#77d3212740d6e48f4d05f70337dfaee6dd36c4cf"
+  integrity sha1-d9MhJ0DW5I9NBfcDN9+u5t02xM8=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-columns@^1.0.2":
@@ -1997,6 +2143,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-columns@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-columns/download/@remirror/extension-columns-1.0.4.tgz#bd21f74928dac5315ede7fcec7ba4e8ea94c94a4"
+  integrity sha1-vSH3SSjaxTFe3n/Ox7pOjqlMlKQ=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-diff@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-diff/-/extension-diff-1.0.2.tgz#1a44413682494f8ce7d7b500d04138a495637c76"
@@ -2004,6 +2159,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-diff@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-diff/download/@remirror/extension-diff-1.0.4.tgz#12debd8c1fdeb39c0ca84dbe9a008329542f27a2"
+  integrity sha1-Et69jB/es5wMqE2+mgCDKVQvJ6I=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-doc@^1.0.3":
@@ -2015,6 +2179,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-doc@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-doc/download/@remirror/extension-doc-1.0.5.tgz#1bc6ea236a2960ca151fd3caad1b735aaa1a0e27"
+  integrity sha1-G8bqI2opYMoVH9PKrRtzWqoaDic=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-drop-cursor@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-drop-cursor/-/extension-drop-cursor-1.0.2.tgz#8dade4e1473a10004937eb7a6bcb66a1a6e46fca"
@@ -2022,6 +2195,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-drop-cursor@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-drop-cursor/download/@remirror/extension-drop-cursor-1.0.4.tgz#d0962ca70de5f8f6fdc100278d1c6b8bfb222e70"
+  integrity sha1-0JYspw3l+Pb9wQAnjRxri/siLnA=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-embed@^1.1.1":
@@ -2034,6 +2216,18 @@
     "@remirror/messages" "^1.0.2"
     "@types/querystringify" "^2.0.0"
     prosemirror-resizable-view "^1.0.0"
+    querystringify "^2.2.0"
+
+"@remirror/extension-embed@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.nlark.com/@remirror/extension-embed/download/@remirror/extension-embed-1.1.4.tgz#285c6016cd89444296d0fddd6f404a28e1986237"
+  integrity sha1-KFxgFs2JREKW0P3db0BKKOGYYjc=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@types/querystringify" "^2.0.0"
+    prosemirror-resizable-view "^1.0.1"
     querystringify "^2.2.0"
 
 "@remirror/extension-emoji@^1.0.2":
@@ -2051,6 +2245,21 @@
     escape-string-regexp "^4.0.0"
     svgmoji "^3.2.0"
 
+"@remirror/extension-emoji@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-emoji/download/@remirror/extension-emoji-1.0.5.tgz#b064da3034b345e54d649f2d3dd6f81cf4f0badd"
+  integrity sha1-sGTaMDSzReVNZJ8tPdb4HPTwut0=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+    emojibase "^5.1.0"
+    emojibase-data "^6.1.0"
+    emojibase-regex "^5.1.0"
+    escape-string-regexp "^4.0.0"
+    svgmoji "^3.2.0"
+
 "@remirror/extension-epic-mode@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-epic-mode/-/extension-epic-mode-1.0.2.tgz#fdec0467ace4ee68293c4b86dbc355cd79a69c6d"
@@ -2058,6 +2267,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-epic-mode@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-epic-mode/download/@remirror/extension-epic-mode-1.0.4.tgz#45fb991065e9977f7e164b2569a7cbf697c3c316"
+  integrity sha1-RfuZEGXpl39+FkslaafL9pfDwxY=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-events@^1.0.2":
@@ -2069,6 +2287,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-events@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-events/download/@remirror/extension-events-1.0.4.tgz#06f83668b770a8b68f85334346849562ede08fb4"
+  integrity sha1-Bvg2aLdwqLaPhTNDRoSVYu3gj7Q=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-font-family@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-font-family/-/extension-font-family-1.0.2.tgz#9c01dbcb96e11ae5522d0b8bc04f799c8cbf392f"
@@ -2076,6 +2303,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-font-family@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-font-family/download/@remirror/extension-font-family-1.0.4.tgz#e430cb9c311d643c05bcfad28cbf95e9ce9b2212"
+  integrity sha1-5DDLnDEdZDwFvPrSjL+V6c6bIhI=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-font-size@^1.0.2":
@@ -2088,6 +2324,16 @@
     "@remirror/messages" "^1.0.2"
     round "^2.0.1"
 
+"@remirror/extension-font-size@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-font-size/download/@remirror/extension-font-size-1.0.4.tgz#faecbdcc69413167bb743a0b095c6764dbbac563"
+  integrity sha1-+uy9zGlBMWe7dDoLCVxnZNu6xWM=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    round "^2.0.1"
+
 "@remirror/extension-gap-cursor@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-gap-cursor/-/extension-gap-cursor-1.0.2.tgz#8cf6d7da4730f7eed9084af02c7511f65d51ea03"
@@ -2095,6 +2341,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-gap-cursor@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-gap-cursor/download/@remirror/extension-gap-cursor-1.0.4.tgz#6d0c6f102d412e29c9b21c611be3338a45f8438f"
+  integrity sha1-bQxvEC1BLinJshxhG+MzikX4Q48=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-hard-break@^1.0.2":
@@ -2106,6 +2361,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-hard-break@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-hard-break/download/@remirror/extension-hard-break-1.0.4.tgz#0a9ebc7865a1e7245ef7d6226461ec3a2a1eeb38"
+  integrity sha1-Cp68eGWh5yRe99YiZGHsOioe6zg=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-heading@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-heading/-/extension-heading-1.0.2.tgz#bb5b3d9dea817017c6f238d671ff892434e4ad7a"
@@ -2113,6 +2377,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-heading@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-heading/download/@remirror/extension-heading-1.0.4.tgz#68ebc8ca3ac24fd89b7b4c3e5a1d214030b18ee4"
+  integrity sha1-aOvIyjrCT9ibe0w+Wh0hQDCxjuQ=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-history@^1.0.2":
@@ -2124,6 +2397,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-history@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-history/download/@remirror/extension-history-1.0.4.tgz#2ea9e7d56f08fe5dea537aa71eeab48f999daf08"
+  integrity sha1-Lqnn1W8I/l3qU3qnHuq0j5mdrwg=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-horizontal-rule@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-horizontal-rule/-/extension-horizontal-rule-1.0.2.tgz#e920fdf9daca9336322c312790bb0bbd76144dae"
@@ -2131,6 +2413,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-horizontal-rule@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-horizontal-rule/download/@remirror/extension-horizontal-rule-1.0.4.tgz#f761ab4e1e4a7cf43efaa8c7276476bda5f2f847"
+  integrity sha1-92GrTh5KfPQ++qjHJ2R2vaXy+Ec=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-image@^1.0.3":
@@ -2144,6 +2435,17 @@
     "@remirror/theme" "^1.1.0"
     prosemirror-resizable-view "^1.0.0"
 
+"@remirror/extension-image@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.nlark.com/@remirror/extension-image/download/@remirror/extension-image-1.0.7.tgz#71922681d1e156ff6eb34ebb81d54987ca099dea"
+  integrity sha1-cZImgdHhVv9us067gdVJh8oJneo=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+    prosemirror-resizable-view "^1.0.1"
+
 "@remirror/extension-italic@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-italic/-/extension-italic-1.0.2.tgz#3ae0260b8e9ca1b2be04fd8382783d56c1bf3819"
@@ -2151,6 +2453,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-italic@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-italic/download/@remirror/extension-italic-1.0.4.tgz#2d5484f6e259b063748268fb05009148124f63bc"
+  integrity sha1-LVSE9uJZsGN0gmj7BQCRSBJPY7w=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-link@^1.0.2":
@@ -2162,6 +2473,27 @@
     "@remirror/core" "^1.0.3"
     "@remirror/extension-events" "^1.0.2"
     "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-link@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-link/download/@remirror/extension-link-1.0.4.tgz#16776d0541b41118b501af850f992e470da983d6"
+  integrity sha1-FndtBUG0ERi1Aa+FD5kuRw2pg9Y=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-list@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.nlark.com/@remirror/extension-list/download/@remirror/extension-list-1.0.11.tgz#7d6e39143c02c4f7b3532ed932eb1a5a71369832"
+  integrity sha1-fW45FDwCxPezUy7ZMusaWnE2mDI=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
 
 "@remirror/extension-list@^1.0.5":
   version "1.0.5"
@@ -2188,6 +2520,20 @@
     turndown "^7.1.1"
     turndown-plugin-gfm "^1.0.2"
 
+"@remirror/extension-markdown@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-markdown/download/@remirror/extension-markdown-1.0.4.tgz#6eb462e96072848d625891db2f946ae3a04f5179"
+  integrity sha1-brRi6WByhI1iWJHbL5Rq46BPUXk=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@types/marked" "^2.0.4"
+    "@types/turndown" "^5.0.1"
+    marked "^2.1.3"
+    turndown "^7.1.1"
+    turndown-plugin-gfm "^1.0.2"
+
 "@remirror/extension-mention-atom@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-mention-atom/-/extension-mention-atom-1.0.2.tgz#36c139527eab6939bdde5589867d30ca615a595c"
@@ -2198,6 +2544,17 @@
     "@remirror/extension-events" "^1.0.2"
     "@remirror/messages" "^1.0.2"
     "@remirror/theme" "^1.1.0"
+
+"@remirror/extension-mention-atom@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-mention-atom/download/@remirror/extension-mention-atom-1.0.5.tgz#527e912f03352ce9b0e2262930bdf3dfbb9e82f6"
+  integrity sha1-Un6RLwM1LOmw4iYpML3z37uegvY=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
 
 "@remirror/extension-mention@^1.0.2":
   version "1.0.2"
@@ -2210,6 +2567,17 @@
     "@remirror/messages" "^1.0.2"
     escape-string-regexp "^4.0.0"
 
+"@remirror/extension-mention@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-mention/download/@remirror/extension-mention-1.0.4.tgz#b1004322b5935479a0957fc7f6bae7f2bc4935c9"
+  integrity sha1-sQBDIrWTVHmglX/H9rrn8rxJNck=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/messages" "^1.0.2"
+    escape-string-regexp "^4.0.0"
+
 "@remirror/extension-node-formatting@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@remirror/extension-node-formatting/-/extension-node-formatting-1.0.5.tgz#c9fa1302a9ba59658e136a10bbc4ac14bb57ce9b"
@@ -2217,6 +2585,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-node-formatting@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.nlark.com/@remirror/extension-node-formatting/download/@remirror/extension-node-formatting-1.0.7.tgz#0aa9edfb173e96c00172f7ffcdbc93f581af43b3"
+  integrity sha1-Cqnt+xc+lsABcvf/zbyT9YGvQ7M=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-paragraph@^1.0.2":
@@ -2228,6 +2605,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-paragraph@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-paragraph/download/@remirror/extension-paragraph-1.0.4.tgz#8552bdeb6ad73fcfe9348ac9f94cbc4497ec0fc3"
+  integrity sha1-hVK962rXP8/pNIrJ+Uy8RJfsD8M=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-placeholder@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-placeholder/-/extension-placeholder-1.0.2.tgz#7a80c3ed455675fcef1be00b6a6215100750b8f2"
@@ -2237,6 +2623,16 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
     "@remirror/theme" "^1.1.0"
+
+"@remirror/extension-placeholder@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-placeholder/download/@remirror/extension-placeholder-1.0.5.tgz#edb6af246ae75b63e02260e122b7615f157c1d1e"
+  integrity sha1-7bavJGrnW2PgImDhIrdhXxV8HR4=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
 
 "@remirror/extension-positioner@^1.1.0":
   version "1.1.0"
@@ -2250,6 +2646,18 @@
     "@remirror/theme" "^1.1.0"
     nanoevents "^5.1.13"
 
+"@remirror/extension-positioner@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.nlark.com/@remirror/extension-positioner/download/@remirror/extension-positioner-1.1.3.tgz#bfb0b211fb694a1d64a27e7b99440a9df5ce7245"
+  integrity sha1-v7CyEftpSh1kon57mUQKnfXOckU=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+    nanoevents "^5.1.13"
+
 "@remirror/extension-react-component@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@remirror/extension-react-component/-/extension-react-component-1.0.4.tgz#69f325b2f169281d6da48781e8ed323b5e11398d"
@@ -2257,6 +2665,16 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+    nanoevents "^5.1.13"
+
+"@remirror/extension-react-component@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/extension-react-component/download/@remirror/extension-react-component-1.0.6.tgz#541073c360787a2fe662a0b066aa967461667c13"
+  integrity sha1-VBBzw2B4ei/mYqCwZqqWdGFmfBM=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
     nanoevents "^5.1.13"
 
@@ -2268,6 +2686,17 @@
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
     "@remirror/extension-react-component" "^1.0.4"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/react-utils" "^1.0.2"
+
+"@remirror/extension-react-ssr@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-react-ssr/download/@remirror/extension-react-ssr-1.0.5.tgz#c597902cc70e8352a278127e69728211dd1de568"
+  integrity sha1-xZeQLMcOg1KieBJ+aXKCEd0d5Wg=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-react-component" "^1.0.6"
     "@remirror/messages" "^1.0.2"
     "@remirror/react-utils" "^1.0.2"
 
@@ -2292,6 +2721,27 @@
     "@remirror/theme" "^1.1.0"
     jsx-dom "^6.4.23"
 
+"@remirror/extension-react-tables@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.nlark.com/@remirror/extension-react-tables/download/@remirror/extension-react-tables-1.0.9.tgz#79016d953c7b6af4749293d9cced0e794f8c4d5b"
+  integrity sha1-eQFtlTx7avR0kpPZzO0OeU+MTVs=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@emotion/css" "^11.1.3"
+    "@linaria/core" "3.0.0-beta.4"
+    "@remirror/core" "^1.1.1"
+    "@remirror/core-utils" "^1.1.0"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/extension-tables" "^1.0.5"
+    "@remirror/icons" "^1.0.2"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/preset-core" "^1.0.6"
+    "@remirror/react-components" "^1.0.8"
+    "@remirror/react-core" "^1.0.7"
+    "@remirror/react-hooks" "^1.0.8"
+    "@remirror/theme" "^1.1.2"
+    jsx-dom "^6.4.23"
+
 "@remirror/extension-search@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-search/-/extension-search-1.0.2.tgz#7c9bc8e3b260d0b40fb5c4430a1d22512bfb5370"
@@ -2299,6 +2749,16 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+    escape-string-regexp "^4.0.0"
+
+"@remirror/extension-search@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-search/download/@remirror/extension-search-1.0.4.tgz#ac2115c94fcb891aeb634601774d7dd2e9523584"
+  integrity sha1-rCEVyU/LiRrrY0YBd0190ulSNYQ=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
     escape-string-regexp "^4.0.0"
 
@@ -2311,6 +2771,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-strike@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-strike/download/@remirror/extension-strike-1.0.4.tgz#7552a12c2034564fed681fd33202cf2ee555cbb3"
+  integrity sha1-dVKhLCA0Vk/taB/TMgLPLuVVy7M=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-sub@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-sub/-/extension-sub-1.0.2.tgz#b55ff21787d91eb20b1aa3c319410320ca3b36bb"
@@ -2320,6 +2789,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-sub@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-sub/download/@remirror/extension-sub-1.0.4.tgz#a9498d2472c2285a35c2bf23cfee8f08f4b13210"
+  integrity sha1-qUmNJHLCKFo1wr8jz+6PCPSxMhA=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-sup@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-sup/-/extension-sup-1.0.2.tgz#f52d19a46f4cbd4bb35941d7beea002a9354f005"
@@ -2327,6 +2805,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-sup@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-sup/download/@remirror/extension-sup-1.0.4.tgz#c1f54441cf67c0d7dedb38dc71c4c41f99090a85"
+  integrity sha1-wfVEQc9nwNfe2zjcccTEH5kJCoU=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-tables@^1.0.2":
@@ -2339,6 +2826,16 @@
     "@remirror/messages" "^1.0.2"
     "@remirror/theme" "^1.1.0"
 
+"@remirror/extension-tables@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-tables/download/@remirror/extension-tables-1.0.5.tgz#5193771c5921f43550f76ffe477b6ae253de3e55"
+  integrity sha1-UZN3HFkh9DVQ92/+R3tq4lPePlU=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+
 "@remirror/extension-text-case@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-text-case/-/extension-text-case-1.0.2.tgz#04f21a5c7a84868396708aadbf819551f8091aaa"
@@ -2346,6 +2843,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-text-case@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-text-case/download/@remirror/extension-text-case-1.0.4.tgz#e6b2441daacebc4b74a7897679c47ca7ac5739ba"
+  integrity sha1-5rJEHarOvEt0p4l2ecR8p6xXObo=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-text-color@^1.0.2":
@@ -2360,6 +2866,18 @@
     "@remirror/theme" "^1.1.0"
     color2k "^1.2.4"
 
+"@remirror/extension-text-color@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-text-color/download/@remirror/extension-text-color-1.0.5.tgz#a62be55da91a09729215b610ba87a1e1e3f06a11"
+  integrity sha1-pivlXakaCXKSFbYQuoeh4ePwahE=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/i18n" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+    color2k "^1.2.4"
+
 "@remirror/extension-text-highlight@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-text-highlight/-/extension-text-highlight-1.0.2.tgz#9d9440a2ad0a71e716691a46570e13ef38bde11f"
@@ -2368,6 +2886,16 @@
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
     "@remirror/extension-text-color" "^1.0.2"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-text-highlight@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/extension-text-highlight/download/@remirror/extension-text-highlight-1.0.5.tgz#bddb9b6a7e801a2e74f555ad66c6aaebead0ffb3"
+  integrity sha1-vduban6AGi509VWtZsaq6+rQ/7M=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-text-color" "^1.0.5"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-text@^1.0.2":
@@ -2379,6 +2907,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-text@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-text/download/@remirror/extension-text-1.0.4.tgz#70c7100be2e1616c3d755059bc4e511a2401df02"
+  integrity sha1-cMcQC+LhYWw9dVBZvE5RGiQB3wI=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-trailing-node@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-trailing-node/-/extension-trailing-node-1.0.2.tgz#2d79518b15d526be9633b627c0dbe13bf5f89c97"
@@ -2386,6 +2923,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-trailing-node@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-trailing-node/download/@remirror/extension-trailing-node-1.0.4.tgz#7c6fe00a01c59d572b4bc477e0474023e2bd8c38"
+  integrity sha1-fG/gCgHFnVcrS8R34EdAI+K9jDg=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-underline@^1.0.2":
@@ -2397,6 +2943,15 @@
     "@remirror/core" "^1.0.3"
     "@remirror/messages" "^1.0.2"
 
+"@remirror/extension-underline@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-underline/download/@remirror/extension-underline-1.0.4.tgz#a96d456a851bf61fa803577a7ddb2ccbfd261814"
+  integrity sha1-qW1FaoUb9h+oA1d6fdssy/0mGBQ=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/messages" "^1.0.2"
+
 "@remirror/extension-whitespace@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/extension-whitespace/-/extension-whitespace-1.0.2.tgz#806ac6ae3afb73cf7cd4b3599200c1c2d1a01c41"
@@ -2404,6 +2959,15 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+
+"@remirror/extension-whitespace@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@remirror/extension-whitespace/download/@remirror/extension-whitespace-1.0.4.tgz#68cdb6d967ada296c00c41b3ae0efd9b531ffc24"
+  integrity sha1-aM222WetopbADEGzrg79m1Mf/CQ=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
     "@remirror/messages" "^1.0.2"
 
 "@remirror/extension-yjs@^1.0.3":
@@ -2414,6 +2978,18 @@
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
     "@remirror/extension-annotation" "^1.0.3"
+    "@remirror/messages" "^1.0.2"
+    y-prosemirror "^1.0.9"
+    y-protocols "^1.0.5"
+
+"@remirror/extension-yjs@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/extension-yjs/download/@remirror/extension-yjs-1.0.6.tgz#9c48c74d9ae4bf4c73f18637f79420af13ffc25a"
+  integrity sha1-nEjHTZrkv0xz8YY395QgrxP/wlo=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-annotation" "^1.0.6"
     "@remirror/messages" "^1.0.2"
     y-prosemirror "^1.0.9"
     y-protocols "^1.0.5"
@@ -2498,6 +3074,21 @@
     "@remirror/extension-positioner" "^1.1.0"
     "@remirror/extension-text" "^1.0.2"
 
+"@remirror/preset-core@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/preset-core/download/@remirror/preset-core-1.0.6.tgz#507dfea8483d5eb4e309aa8ea72739bd31f771ac"
+  integrity sha1-UH3+qEg9XrTjCaqOpyc5vTH3caw=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-doc" "^1.0.5"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/extension-gap-cursor" "^1.0.4"
+    "@remirror/extension-history" "^1.0.4"
+    "@remirror/extension-paragraph" "^1.0.4"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/extension-text" "^1.0.4"
+
 "@remirror/preset-formatting@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@remirror/preset-formatting/-/preset-formatting-1.0.4.tgz#70987291b251376549d5b2c9768d4c9f39fb2cd6"
@@ -2520,6 +3111,28 @@
     "@remirror/extension-underline" "^1.0.2"
     "@remirror/extension-whitespace" "^1.0.2"
 
+"@remirror/preset-formatting@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.nlark.com/@remirror/preset-formatting/download/@remirror/preset-formatting-1.0.7.tgz#44629dad338e558d67b8d7890dfddef6d058c473"
+  integrity sha1-RGKdrTOOVY1nuNeJDf3e9tBYxHM=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-bold" "^1.0.4"
+    "@remirror/extension-columns" "^1.0.4"
+    "@remirror/extension-font-size" "^1.0.4"
+    "@remirror/extension-heading" "^1.0.4"
+    "@remirror/extension-italic" "^1.0.4"
+    "@remirror/extension-node-formatting" "^1.0.7"
+    "@remirror/extension-strike" "^1.0.4"
+    "@remirror/extension-sub" "^1.0.4"
+    "@remirror/extension-sup" "^1.0.4"
+    "@remirror/extension-text-case" "^1.0.4"
+    "@remirror/extension-text-color" "^1.0.5"
+    "@remirror/extension-text-highlight" "^1.0.5"
+    "@remirror/extension-underline" "^1.0.4"
+    "@remirror/extension-whitespace" "^1.0.4"
+
 "@remirror/preset-react@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remirror/preset-react/-/preset-react-1.0.2.tgz#aa1c857035d8567822add45a824be8797b02e454"
@@ -2530,6 +3143,18 @@
     "@remirror/extension-placeholder" "^1.0.2"
     "@remirror/extension-react-component" "^1.0.4"
     "@remirror/extension-react-ssr" "^1.0.3"
+    "@remirror/react-utils" "^1.0.2"
+
+"@remirror/preset-react@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/preset-react/download/@remirror/preset-react-1.0.5.tgz#435a769f20b363488d51a9b1f64ca38e44c50282"
+  integrity sha1-Q1p2nyCzY0iNUamx9kyjjkTFAoI=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-placeholder" "^1.0.5"
+    "@remirror/extension-react-component" "^1.0.6"
+    "@remirror/extension-react-ssr" "^1.0.5"
     "@remirror/react-utils" "^1.0.2"
 
 "@remirror/preset-wysiwyg@^1.0.6":
@@ -2561,6 +3186,34 @@
     "@remirror/extension-underline" "^1.0.2"
     "@remirror/preset-core" "^1.0.3"
 
+"@remirror/preset-wysiwyg@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.nlark.com/@remirror/preset-wysiwyg/download/@remirror/preset-wysiwyg-1.1.0.tgz#55471201e67e28d95a19da4fbf6eb4e579ee93b6"
+  integrity sha1-VUcSAeZ+KNlaGdpPv2605Xnuk7Y=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-bidi" "^1.0.4"
+    "@remirror/extension-blockquote" "^1.0.5"
+    "@remirror/extension-bold" "^1.0.4"
+    "@remirror/extension-code" "^1.0.4"
+    "@remirror/extension-code-block" "^1.0.6"
+    "@remirror/extension-drop-cursor" "^1.0.4"
+    "@remirror/extension-embed" "^1.1.4"
+    "@remirror/extension-gap-cursor" "^1.0.4"
+    "@remirror/extension-hard-break" "^1.0.4"
+    "@remirror/extension-heading" "^1.0.4"
+    "@remirror/extension-horizontal-rule" "^1.0.4"
+    "@remirror/extension-image" "^1.0.7"
+    "@remirror/extension-italic" "^1.0.4"
+    "@remirror/extension-link" "^1.0.4"
+    "@remirror/extension-list" "^1.0.11"
+    "@remirror/extension-search" "^1.0.4"
+    "@remirror/extension-strike" "^1.0.4"
+    "@remirror/extension-trailing-node" "^1.0.4"
+    "@remirror/extension-underline" "^1.0.4"
+    "@remirror/preset-core" "^1.0.6"
+
 "@remirror/react-components@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@remirror/react-components/-/react-components-1.0.4.tgz#93890d8e4592104ddf45a7a64d8a64c9b0634cfd"
@@ -2579,6 +3232,37 @@
     "@remirror/react-hooks" "^1.0.4"
     "@remirror/react-utils" "^1.0.2"
     "@remirror/theme" "^1.1.0"
+    "@seznam/compose-react-refs" "^1.0.6"
+    "@types/react-color" "^3.0.5"
+    create-context-state "^1.0.1"
+    match-sorter "^6.3.0"
+    multishift "^1.0.2"
+    react-color "^2.19.3"
+    react-popper "^2.2.5"
+    reakit "^1.3.8"
+    reakit-system-palette "^0.14.1"
+    reakit-utils "^0.15.1"
+    use-isomorphic-layout-effect "^1.1.1"
+    use-previous "^1.1.0"
+
+"@remirror/react-components@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.nlark.com/@remirror/react-components/download/@remirror/react-components-1.0.8.tgz#f5c2a6b86a591095db06e9cfa1825745d9ffed2b"
+  integrity sha1-9cKmuGpZEJXbBunPoYJXRdn/7Ss=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@lingui/core" "^3.10.4"
+    "@popperjs/core" "^2.9.2"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/extension-text-color" "^1.0.5"
+    "@remirror/i18n" "^1.0.3"
+    "@remirror/icons" "^1.0.2"
+    "@remirror/messages" "^1.0.2"
+    "@remirror/react-core" "^1.0.7"
+    "@remirror/react-hooks" "^1.0.8"
+    "@remirror/react-utils" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
     "@seznam/compose-react-refs" "^1.0.6"
     "@types/react-color" "^3.0.5"
     create-context-state "^1.0.1"
@@ -2617,6 +3301,49 @@
     use-isomorphic-layout-effect "^1.1.1"
     use-previous "^1.1.0"
 
+"@remirror/react-core@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.nlark.com/@remirror/react-core/download/@remirror/react-core-1.0.7.tgz#60bf6b4ecf7166d10bbec36ee4b4d9e7d3d4501b"
+  integrity sha1-YL9rTs9xZtELvsNu5LTZ59PUUBs=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/extension-react-component" "^1.0.6"
+    "@remirror/extension-react-ssr" "^1.0.5"
+    "@remirror/i18n" "^1.0.3"
+    "@remirror/preset-core" "^1.0.6"
+    "@remirror/preset-react" "^1.0.5"
+    "@remirror/react-renderer" "^1.0.6"
+    "@remirror/react-ssr" "^1.0.5"
+    "@remirror/react-utils" "^1.0.2"
+    "@remirror/theme" "^1.1.2"
+    "@seznam/compose-react-refs" "^1.0.6"
+    create-context-state "^1.0.1"
+    fast-deep-equal "^3.1.3"
+    resize-observer-polyfill "^1.5.1"
+    tiny-warning "^1.0.3"
+    use-isomorphic-layout-effect "^1.1.1"
+    use-previous "^1.1.0"
+
+"@remirror/react-editors@^0.1.8":
+  version "0.1.8"
+  resolved "https://registry.nlark.com/@remirror/react-editors/download/@remirror/react-editors-0.1.8.tgz#ed92443793d337b67efbff851fdd7b8e8632e64a"
+  integrity sha1-7ZJEN5PTN7Z++/+FH917joYy5ko=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core-helpers" "^1.0.1"
+    "@remirror/extension-react-tables" "^1.0.9"
+    "@remirror/pm" "^1.0.2"
+    "@remirror/react" "^1.0.9"
+    "@remirror/styles" "^1.1.2"
+    "@svgmoji/noto" "^3.2.0"
+    "@types/refractor" "^3.0.2"
+    create-context-state "^1.0.1"
+    refractor "^3.3.1"
+    remirror "1.0.22"
+    svgmoji "^3.2.0"
+
 "@remirror/react-hooks@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@remirror/react-hooks/-/react-hooks-1.0.4.tgz#68b055a3f8dcdc50fb3455f8f6198cf7c7b52ebd"
@@ -2637,6 +3364,26 @@
     use-isomorphic-layout-effect "^1.1.1"
     use-previous "^1.1.0"
 
+"@remirror/react-hooks@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.nlark.com/@remirror/react-hooks/download/@remirror/react-hooks-1.0.8.tgz#3d10e15189588bd259c721b4e8851ccb2893d91a"
+  integrity sha1-PRDhUYlYi9JZxyG06IUcyyiT2Ro=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-emoji" "^1.0.5"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/extension-history" "^1.0.4"
+    "@remirror/extension-mention" "^1.0.4"
+    "@remirror/extension-mention-atom" "^1.0.5"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/i18n" "^1.0.3"
+    "@remirror/react-core" "^1.0.7"
+    "@remirror/react-utils" "^1.0.2"
+    multishift "^1.0.2"
+    use-isomorphic-layout-effect "^1.1.1"
+    use-previous "^1.1.0"
+
 "@remirror/react-renderer@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@remirror/react-renderer/-/react-renderer-1.0.4.tgz#52d3772a4d07ad3b1335617b55f82e00357473f2"
@@ -2644,6 +3391,14 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
+
+"@remirror/react-renderer@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.nlark.com/@remirror/react-renderer/download/@remirror/react-renderer-1.0.6.tgz#160731b9af5d38c975a052d46b5de5cc74e92dee"
+  integrity sha1-Fgcxua9dOMl1oFLUa13lzHTpLe4=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
 
 "@remirror/react-ssr@^1.0.3":
   version "1.0.3"
@@ -2653,6 +3408,15 @@
     "@babel/runtime" "^7.13.10"
     "@remirror/core" "^1.0.3"
     "@remirror/extension-react-ssr" "^1.0.3"
+
+"@remirror/react-ssr@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.nlark.com/@remirror/react-ssr/download/@remirror/react-ssr-1.0.5.tgz#ed49f8f1d4c6dc60092d8171e08940a0634879d6"
+  integrity sha1-7Un48dTG3GAJLYFx4IlAoGNIedY=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/extension-react-ssr" "^1.0.5"
 
 "@remirror/react-utils@^1.0.2":
   version "1.0.2"
@@ -2683,10 +3447,48 @@
     "@remirror/react-ssr" "^1.0.3"
     "@remirror/react-utils" "^1.0.2"
 
+"@remirror/react@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.nlark.com/@remirror/react/download/@remirror/react-1.0.9.tgz#79e9f44c098ce00fcc70bdaa38c96f3a348bf276"
+  integrity sha1-een0TAmM4A/McL2qOMlvOjSL8nY=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/extension-placeholder" "^1.0.5"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/extension-react-component" "^1.0.6"
+    "@remirror/extension-react-ssr" "^1.0.5"
+    "@remirror/extension-react-tables" "^1.0.9"
+    "@remirror/preset-react" "^1.0.5"
+    "@remirror/react-components" "^1.0.8"
+    "@remirror/react-core" "^1.0.7"
+    "@remirror/react-hooks" "^1.0.8"
+    "@remirror/react-renderer" "^1.0.6"
+    "@remirror/react-ssr" "^1.0.5"
+    "@remirror/react-utils" "^1.0.2"
+
+"@remirror/styles@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.nlark.com/@remirror/styles/download/@remirror/styles-1.1.2.tgz#ef9a4dc94dfbff3fd2c85b0d00f32aec21a3cfd3"
+  integrity sha1-75pNyU37/z/SyFsNAPMq7CGjz9M=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+
 "@remirror/theme@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@remirror/theme/-/theme-1.1.0.tgz#d67407240754f94dc1a694934471e68b18d308eb"
   integrity sha512-uqyVSL+UN/6BTky0oRHt9PPzX/foVWvtd74ahQgslpJjkqlMd8lhXxkVK2gLsahMiJMXyUb9L0YwXUZt/O59LA==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@linaria/core" "3.0.0-beta.4"
+    "@remirror/core-types" "^1.0.1"
+    case-anything "^1.1.3"
+    color2k "^1.2.4"
+    csstype "^3.0.7"
+
+"@remirror/theme@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.nlark.com/@remirror/theme/download/@remirror/theme-1.1.2.tgz#f8b4cbf3338a85af4db8e29ee9c1e8b5e2d2d76e"
+  integrity sha1-+LTL8zOKha9NuOKe6cHoteLS124=
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@linaria/core" "3.0.0-beta.4"
@@ -8335,7 +9137,7 @@ highlight.js@^10.4.1:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
   integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
 
-hoist-non-react-statics@^3.3.2:
+hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -12057,6 +12859,17 @@ prosemirror-resizable-view@^1.0.0:
     prosemirror-model "^1.14.2"
     prosemirror-view "^1.18.10"
 
+prosemirror-resizable-view@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.nlark.com/prosemirror-resizable-view/download/prosemirror-resizable-view-1.0.1.tgz#33245669c0800d34cdb27a4da7a27e7dd17d7afe"
+  integrity sha1-MyRWacCADTTNsnpNp6J+fdF9ev4=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core-helpers" "^1.0.1"
+    "@remirror/core-utils" "^1.1.0"
+    prosemirror-model "^1.14.3"
+    prosemirror-view "^1.19.3"
+
 prosemirror-schema-list@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/prosemirror-schema-list/-/prosemirror-schema-list-1.1.5.tgz#e7ad9e337ea3d77da6d6a4250f3d7bd51ae980a4"
@@ -12116,6 +12929,15 @@ prosemirror-view@^1.0.0, prosemirror-view@^1.1.0, prosemirror-view@^1.13.3, pros
   version "1.19.3"
   resolved "https://registry.yarnpkg.com/prosemirror-view/-/prosemirror-view-1.19.3.tgz#8d9bc91705bcf9cb5ae3b4de2668f73c7b93fa14"
   integrity sha512-YP/ZzVwqPPwbHbJi97U2/CeyZ8PIHmLJt0gIhZWP8XfnuBRGG3y+jwLzUoBVmiuoUCy3R6PSB+pOATliGzLfPg==
+  dependencies:
+    prosemirror-model "^1.14.3"
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.1.0"
+
+prosemirror-view@^1.19.3:
+  version "1.20.1"
+  resolved "https://registry.nlark.com/prosemirror-view/download/prosemirror-view-1.20.1.tgz?cache=0&sync_timestamp=1631179256685&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fprosemirror-view%2Fdownload%2Fprosemirror-view-1.20.1.tgz#174ba8ca358c73cc05e9a92a3d252bcf181ea337"
+  integrity sha1-F0uoyjWMc8wF6akqPSUrzxgeozc=
   dependencies:
     prosemirror-model "^1.14.3"
     prosemirror-state "^1.0.0"
@@ -12785,6 +13607,77 @@ remark-stringify@^8.1.0:
     stringify-entities "^3.0.0"
     unherit "^1.0.4"
     xtend "^4.0.1"
+
+remirror@1.0.22:
+  version "1.0.22"
+  resolved "https://registry.nlark.com/remirror/download/remirror-1.0.22.tgz#d2a88691bdb0f536a4a7c20192ace4fa98002231"
+  integrity sha1-0qiGkb2w9Takp8IBkqzk+pgAIjE=
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@remirror/core" "^1.1.1"
+    "@remirror/core-constants" "^1.0.0"
+    "@remirror/core-helpers" "^1.0.1"
+    "@remirror/core-types" "^1.0.1"
+    "@remirror/core-utils" "^1.1.0"
+    "@remirror/dom" "^1.0.6"
+    "@remirror/extension-annotation" "^1.0.6"
+    "@remirror/extension-bidi" "^1.0.4"
+    "@remirror/extension-blockquote" "^1.0.5"
+    "@remirror/extension-bold" "^1.0.4"
+    "@remirror/extension-callout" "^1.0.5"
+    "@remirror/extension-code" "^1.0.4"
+    "@remirror/extension-code-block" "^1.0.6"
+    "@remirror/extension-codemirror5" "^1.0.4"
+    "@remirror/extension-collaboration" "^1.0.4"
+    "@remirror/extension-columns" "^1.0.4"
+    "@remirror/extension-diff" "^1.0.4"
+    "@remirror/extension-doc" "^1.0.5"
+    "@remirror/extension-drop-cursor" "^1.0.4"
+    "@remirror/extension-embed" "^1.1.4"
+    "@remirror/extension-emoji" "^1.0.5"
+    "@remirror/extension-epic-mode" "^1.0.4"
+    "@remirror/extension-events" "^1.0.4"
+    "@remirror/extension-font-family" "^1.0.4"
+    "@remirror/extension-font-size" "^1.0.4"
+    "@remirror/extension-gap-cursor" "^1.0.4"
+    "@remirror/extension-hard-break" "^1.0.4"
+    "@remirror/extension-heading" "^1.0.4"
+    "@remirror/extension-history" "^1.0.4"
+    "@remirror/extension-horizontal-rule" "^1.0.4"
+    "@remirror/extension-image" "^1.0.7"
+    "@remirror/extension-italic" "^1.0.4"
+    "@remirror/extension-link" "^1.0.4"
+    "@remirror/extension-list" "^1.0.11"
+    "@remirror/extension-markdown" "^1.0.4"
+    "@remirror/extension-mention" "^1.0.4"
+    "@remirror/extension-mention-atom" "^1.0.5"
+    "@remirror/extension-node-formatting" "^1.0.7"
+    "@remirror/extension-paragraph" "^1.0.4"
+    "@remirror/extension-placeholder" "^1.0.5"
+    "@remirror/extension-positioner" "^1.1.3"
+    "@remirror/extension-search" "^1.0.4"
+    "@remirror/extension-strike" "^1.0.4"
+    "@remirror/extension-sub" "^1.0.4"
+    "@remirror/extension-sup" "^1.0.4"
+    "@remirror/extension-tables" "^1.0.5"
+    "@remirror/extension-text" "^1.0.4"
+    "@remirror/extension-text-case" "^1.0.4"
+    "@remirror/extension-text-color" "^1.0.5"
+    "@remirror/extension-text-highlight" "^1.0.5"
+    "@remirror/extension-trailing-node" "^1.0.4"
+    "@remirror/extension-underline" "^1.0.4"
+    "@remirror/extension-whitespace" "^1.0.4"
+    "@remirror/extension-yjs" "^1.0.6"
+    "@remirror/icons" "^1.0.2"
+    "@remirror/preset-core" "^1.0.6"
+    "@remirror/preset-formatting" "^1.0.7"
+    "@remirror/preset-wysiwyg" "^1.1.0"
+    "@remirror/theme" "^1.1.2"
+    "@types/codemirror" "^5.60.2"
+    "@types/refractor" "^3.0.2"
+    codemirror "^5.62.0"
+    refractor "^3.3.1"
+    yjs "^13.5.11"
 
 remirror@^1.0.14:
   version "1.0.14"
