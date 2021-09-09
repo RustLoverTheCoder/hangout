@@ -19,7 +19,7 @@ const Editor = () => {
     return false
   }
 
-  const extensions = () => React.useCallback(() => [
+  const extensions = React.useCallback(() => [
     new BoldExtension(),
     new ItalicExtension(),
     new PlaceholderExtension({ placeholder: `Hi!` })
