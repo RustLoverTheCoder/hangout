@@ -12,60 +12,60 @@ const Skeleton = () => {
             opacity: 0.102498
           }} />
         </h2>
-        <div className="flex h-auto overflow-hidden flex-wrap  gap-1 mt-1">
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+        <div className="flex h-auto overflow-hidden flex-wrap  gap-1 mt-1 flex-1">
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "2.6875rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "2.9375rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "4.75rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.5625rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.75rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.25rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.3125rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "2.9375rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "4.75rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.5625rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.75rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.25rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "3.3125rem",
             opacity: 0.06
           }} />
-          <div className="block bg-text-normal rounded-full h-5.5" style={{
+          <div className="block bg-text-normal rounded-full h-5.5 flex-1" style={{
             width: "2.9375rem",
             opacity: 0.06
           }} />
