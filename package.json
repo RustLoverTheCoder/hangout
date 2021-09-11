@@ -29,6 +29,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-query": "^3.21.0",
+    "react-toastify": "^8.0.2",
     "remirror": "^1.0.14",
     "tailwindcss": "^2.2.7",
     "use-query-params": "^1.2.3",

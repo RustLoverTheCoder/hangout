@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       spacing: {
         4.5: "1.125rem",
+        5.5: "1.375rem",
         10.5: "2.625rem",
         13: "3.25rem",
         18: "4.5rem",
@@ -24,7 +25,8 @@ module.exports = {
         primary: "#36393f",
         "modifier-selected": "rgba(79,84,92,0.32)",
         "message-bar": "#5564e9",
-        "accent": "#4f545c"
+        "accent": "#4f545c",
+        "text-normal": "#dcddde"
       }
     }
   },
