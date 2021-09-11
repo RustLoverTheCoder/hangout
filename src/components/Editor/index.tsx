@@ -22,7 +22,7 @@ const Editor = () => {
 
   return (
     <div
-      className="w-full rounded-lg flex items-start"
+      className="w-full rounded-lg flex items-start relative z-50"
       style={{ background: "#40444b", minHeight: "44px" }}
     >
       <div className="w-14 h-11 flex justify-center items-center flex-shrink-0">

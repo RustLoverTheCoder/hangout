@@ -6,7 +6,10 @@ const ChatLayout = () => {
   return (
     <div className="flex-1 bg-primary flex flex-col">
       <ChatHeader />
-      <ChatContainerLayout />
+      <div className='flex w-full h-full'>
+        <ChatContainerLayout />
+        <div className='h-full w-60 bg-secondary hidden lg:flex flex-shrink-0'></div>
+      </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const ChatHeader = () => {
   return (
-    <div className="w-full h-12 bg-primary flex justify-between items-center shadow px-2 text-interactive-normal">
+    <div className="w-full h-12 bg-primary flex justify-between items-center shadow px-2 text-interactive-normal flex-shrink-0">
       <div className="hidden md:flex">
         <Link
           to="/app/#xx"
