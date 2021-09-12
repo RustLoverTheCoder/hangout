@@ -10,7 +10,9 @@ const List = () => {
   })
 
   return (
+    // @ts-ignore
     <div ref={outerRef} className="absolute top-0 bottom-0 right-0 left-0 z-0 overflow-y-auto overflow-x-hidden pr-0">
+      {/*@ts-ignore*/}
       <div ref={innerRef} className="flex flex-col w-full gap-y-1">
         {items.map(({ index, size }) => {
           if (index % 3 === 0) {

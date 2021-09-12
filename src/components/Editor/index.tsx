@@ -1,5 +1,6 @@
 import "remirror/styles/all.css"
 import * as React from "react"
+import toast, { Toaster } from "react-hot-toast"
 
 const isBrowser = typeof window !== "undefined"
 import { PlaceholderExtension, BoldExtension, ItalicExtension, UnderlineExtension } from "remirror/extensions"
@@ -46,9 +47,11 @@ const Editor = () => {
           <BiSticker className="text-2xl text-interactive-normal hover:text-interactive-hover" />
         </div>
         <div className="w-11 h-11 hidden sm:flex justify-center items-center">
-          <BiHappy className="text-2xl text-interactive-normal hover:text-interactive-hover" />
+          <BiHappy className="text-2xl text-interactive-normal hover:text-interactive-hover"
+                   onClick={() => toast("hi")} />
         </div>
       </div>
+      <Toaster />
     </div>
   )
 }

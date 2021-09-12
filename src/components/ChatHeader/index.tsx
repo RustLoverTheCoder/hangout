@@ -1,11 +1,14 @@
 import * as React from "react"
 import { IoHelpCircleSharp, IoMail } from "react-icons/io5"
 import { CgMenuLeft } from "react-icons/cg"
+import { MdNotifications } from "react-icons/md"
+import { AiFillPushpin } from "react-icons/ai"
 import { Link } from "gatsby"
 
 const ChatHeader = () => {
   return (
-    <div className="w-full h-12 bg-primary flex justify-between items-center shadow px-2 text-interactive-normal flex-shrink-0">
+    <div
+      className="w-full h-12 bg-primary flex justify-between items-center shadow px-2 text-interactive-normal flex-shrink-0">
       <div className="hidden md:flex">
         <Link
           to="/app/#xx"
@@ -13,26 +16,37 @@ const ChatHeader = () => {
         >
           好友
         </Link>
-        <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
+        <Link to="/app/#xx"
+              className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
           在线
-        </div>
-        <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
+        </Link>
+        <Link to="/app/#xx"
+              className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
           全部
-        </div>
-        <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
+        </Link>
+        <Link to="/app/#xx"
+              className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
           待定
-        </div>
-        <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
+        </Link>
+        <Link to="/app/#xx"
+              className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
           已屏蔽
-        </div>
-        <div className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
+        </Link>
+        <Link to="/app/#xx"
+              className="px-2 mx-2 h-6 flex justify-center items-center hover:text-interactive-hover font-semibold">
           添加好友
-        </div>
+        </Link>
       </div>
       <div className="w-10 flex justify-center items-center md:hidden">
         <CgMenuLeft className="text-2xl hover:text-interactive-hover" />
       </div>
       <div className="flex">
+        <div className="w-10 flex justify-center items-center">
+          <MdNotifications className="text-2xl hover:text-interactive-hover" />
+        </div>
+        <div className="w-10 flex justify-center items-center">
+          <AiFillPushpin className="text-2xl hover:text-interactive-hover" />
+        </div>
         <div className="w-10 flex justify-center items-center">
           <IoMail className="text-2xl hover:text-interactive-hover" />
         </div>
