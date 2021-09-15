@@ -1,8 +1,6 @@
 import * as React from "react"
 import { PageProps } from "gatsby"
-import { ModalContainer, Reoverlay } from 'reoverlay';
-
-import { DatePickerModal } from '../components/Modals'
+import { ModalContainer } from 'reoverlay';
 
 import BaseLayout from "../layouts/baseLayout"
 import ChannelLayout from '../layouts/ChannelLayout'
@@ -18,14 +16,6 @@ type DataProps = {
 
 
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
-  React.useEffect(() => {
-    Reoverlay.showModal(DatePickerModal, {
-      on: "Are you sure you want to delete this post",
-      onConfirm: () => {
-        console.log('1')
-      }
-    })
-  }, [])
   return (
     <>
       <Seo title="哔啵" />
