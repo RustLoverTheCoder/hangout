@@ -2,11 +2,17 @@ import * as React from "react"
 import { Link } from "gatsby"
 import useTransitionState from "use-transition-state"
 
+import { ModalContainer, Reoverlay } from 'reoverlay';
+
+import { DatePickerModal } from '../components/Modals'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const SecondPage = () => {
+  React.useEffect(() => {
+    Reoverlay.showModal(DatePickerModal)
+  }, [])
   const [searchQuery, setSearchQuery, { isPending }] = useTransitionState(
     null,
     { timeoutMs: 500 }
@@ -21,6 +27,7 @@ const SecondPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
+      <ModalContainer />
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>

@@ -10,14 +10,18 @@ module.exports = {
         13: "3.25rem",
         18: "4.5rem",
         34: "8.5rem",
-        55: "13.75rem"
+        55: "13.75rem",
+        110: '27.5rem',
+        170: '42.5rem',
       },
       colors: {
         "interactive-normal": "#b9bbbe",
         "interactive-hover": "#dcddde",
         muted: "#72767d",
         "header-primary": "#fff",
-        "header-secondary": "#b9bbbe"
+        "header-secondary": "#b9bbbe",
+        'header-primary-light': '#060607',
+
       },
       backgroundColor: {
         tertiary: "#202225",
