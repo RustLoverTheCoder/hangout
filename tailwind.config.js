@@ -1,4 +1,5 @@
 module.exports = {
+  important: true,
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "media", // or 'media' or 'class'
   theme: {
@@ -31,6 +32,10 @@ module.exports = {
         "message-bar": "#5564e9",
         "accent": "#4f545c",
         "text-normal": "#dcddde"
+      },
+      cursor: {
+        'zoom-in': 'zoom-in',
+        'zoom-out': 'zoom-out',
       }
     }
   },
