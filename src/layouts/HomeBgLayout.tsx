@@ -6,27 +6,16 @@ interface PropsTypes {
 }
 
 const HomeBgLayout = ({ children }: PropsTypes) => {
-  if (typeof window !== "undefined" && window.innerWidth < 700) {
-    return (
-      <div className="w-full h-full">
-        <StaticImage
-          src="../images/home_bg_mini.png"
-          quality={75}
-          className="w-full h-full"
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="bg"
-        />
-      </div>
-    )
-  }
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full bg-background">
       <StaticImage
-        src="../images/home_bg.png"
+        src="../images/home_bg_mini.png"
         quality={75}
         className="w-full h-full"
         formats={["AUTO", "WEBP", "AVIF"]}
         alt="bg"
+        loading='eager'
+        imgClassName='h-full md:w-full object-cover md:object-contain md:object-right'
       />
     </div>
   )
