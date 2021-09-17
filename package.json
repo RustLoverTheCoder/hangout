@@ -6,42 +6,42 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@remirror/pm": "^1.0.2",
-    "@remirror/react": "^1.0.5",
-    "autoprefixer": "^10.3.1",
-    "gatsby": "^3.11.1",
-    "gatsby-plugin-gatsby-cloud": "^2.11.0",
-    "gatsby-plugin-image": "^1.11.0",
-    "gatsby-plugin-manifest": "^3.11.0",
-    "gatsby-plugin-offline": "^4.11.0",
-    "gatsby-plugin-postcss": "^4.12.0",
-    "gatsby-plugin-react-helmet": "^4.11.0",
-    "gatsby-plugin-sharp": "^3.11.0",
+    "@remirror/react": "^1.0.9",
+    "autoprefixer": "^10.3.4",
+    "gatsby": "^4.0.0-zz-next.1",
+    "gatsby-plugin-gatsby-cloud": "^4.0.0-zz-next.1",
+    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-manifest": "^3.13.0",
+    "gatsby-plugin-offline": "^4.13.0",
+    "gatsby-plugin-postcss": "^4.13.0",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-plugin-use-query-params": "^1.0.1",
-    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-source-filesystem": "^3.13.0",
     "gatsby-source-graphql": "^3.13.0",
-    "gatsby-transformer-sharp": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.13.0",
     "postcss": "^8.3.6",
     "prop-types": "^15.7.2",
-    "react": "^18.0.0-alpha-cb8a50619-20210909",
+    "react": "^18.0.0-alpha-a8cabb564-20210915",
     "react-cool-img": "^1.2.12",
-    "react-cool-virtual": "^0.5.3",
+    "react-cool-virtual": "^0.5.4",
     "react-date-range": "^1.4.0",
-    "react-dom": "^18.0.0-alpha-cb8a50619-20210909",
+    "react-dom": "^18.0.0-alpha-a8cabb564-20210915",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.15.3",
     "react-hot-toast": "^2.1.1",
     "react-icons": "^4.2.0",
-    "react-query": "^3.21.0",
+    "react-query": "^3.23.2",
     "react-spinners": "^0.11.0",
-    "remirror": "^1.0.14",
+    "remirror": "^1.0.24",
     "reoverlay": "^1.0.0",
-    "tailwindcss": "^2.2.7",
+    "tailwindcss": "^2.2.15",
     "use-query-params": "^1.2.3",
     "use-transition-state": "^0.0.3",
-    "zustand": "^3.5.9"
+    "zustand": "^3.5.10"
   },
   "devDependencies": {
-    "prettier": "2.3.2"
+    "prettier": "^2.4.1"
   },
   "keywords": [
     "gatsby"
@@ -62,5 +62,12 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "yarn-upgrade-all": {
+    "ignore": [
+      "react",
+      "gatsby",
+      "gatsby-plugin-gatsby-cloud"
+    ]
   }
 }
