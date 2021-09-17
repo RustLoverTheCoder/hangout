@@ -1,24 +1,18 @@
-import * as React from "react"
-const isBrowser = typeof window !== "undefined"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import { PageProps } from 'gatsby'
 
-
-const SecondPage = () => {
-  if(!isBrowser){
-    return null
+type DataProps = {
+  site: {
+    buildTime: string
   }
-  return (
-    <div className="w-full h-full flex justify-center items-center">
-      {window.innerWidth < 800 ? <StaticImage src="../images/home_bg_mini.png"
-                                              width={window.innerWidth} quality={75}
-                                              className="h-full object-cover md:w-full"
-                                              formats={["AUTO", "WEBP", "AVIF"]} alt="背景" /> :
-        <StaticImage src="../images/home_bg.png"
-                     width={window.innerWidth} quality={75} className="h-full object-cover md:w-full"
-                     formats={["AUTO", "WEBP", "AVIF"]} alt="背景" />}
+}
 
+const AppPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
+  return (
+    <div>
+      <div>123</div>
     </div>
   )
 }
 
-export default SecondPage
+export default AppPage
