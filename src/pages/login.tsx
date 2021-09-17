@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { PageProps } from 'gatsby'
-import HomeBgLayout from '../layouts/HomeBgLayout'
 
 type DataProps = {
   site: {
@@ -10,9 +9,9 @@ type DataProps = {
 
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   return (
-    <HomeBgLayout>
+    <div>
       <div>123</div>
-    </HomeBgLayout>
+    </div>
   )
 }
 
