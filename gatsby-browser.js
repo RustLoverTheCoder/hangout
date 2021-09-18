@@ -1,8 +1,13 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+import "./src/styles/global.css"
+import * as React from "react"
+import { QueryClientProvider, QueryClient } from "react-query"
 
-// You can delete this file if you're not using it
-import './src/styles/global.css';
+const queryClient = new QueryClient()
+
+export const wrapPageElement = ( { element } ) => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      {element}
+    </QueryClientProvider>
+  )
+}

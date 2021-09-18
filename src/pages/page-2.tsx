@@ -1,5 +1,11 @@
-import * as React from 'react'
-import { PageProps } from 'gatsby'
+import * as React from "react"
+import { PageProps } from "gatsby"
+
+import { ReactQueryDevtools } from "react-query/devtools"
+
+import { useMutation, useQueryClient } from "react-query"
+import { ping, userLogin } from "../graphql/query"
+import { userRegister } from "../graphql/mutation"
 
 type DataProps = {
   site: {
@@ -7,11 +13,34 @@ type DataProps = {
   }
 }
 
-const AppPage: React.FC<PageProps<DataProps>> = ({ data, path, serverData }) => {
+
+const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
+
+  const queryClient = useQueryClient()
+
+  const { data: data2, status: status2 } = ping()
+  console.log("data", data2, status2)
+
+  const mutation = useMutation(({ nickname }: userRegister) => userRegister(nickname), {
+      onError: (error, variables, context) => {
+        console.log("userRegister error:", error, variables, context)
+      },
+      onSuccess: (data, variables, context) => {
+
+        console.log("userRegister success:", data, variables, context)
+        // todo 请求 token
+        const res = queryClient.invalidateQueries("userLogin")
+        console.log("res", res)
+      }
+    }
+  )
+
   return (
     <main>
-      <h1>SSR Page with Dogs</h1>
+      <div>{mutation.isError ? "error" : null}</div>
+      <h1 onClick={() => mutation.mutate({ nickname: "maxiang123456789" })}>SSR Page with Dogs</h1>
       <img alt="Happy dog" src={serverData.message} />
+      <ReactQueryDevtools initialIsOpen={false} />
     </main>
   )
 }
@@ -25,14 +54,14 @@ export async function getServerData() {
       throw new Error(`Response failed`)
     }
     return {
-      props: await res.json(),
+      props: await res.json()
     }
   } catch (error) {
     return {
       headers: {
-        status: 500,
+        status: 500
       },
-      props: {},
+      props: {}
     }
   }
 }
