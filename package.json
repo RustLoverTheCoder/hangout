@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@react-spring/web": "^9.2.4",
     "@remirror/pm": "^1.0.2",
     "@remirror/react": "^1.0.9",
     "autoprefixer": "^10.3.4",

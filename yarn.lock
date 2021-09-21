@@ -1930,6 +1930,51 @@
     tiny-warning "^1.0.3"
     tslib "^2.3.0"
 
+"@react-spring/animated@~9.2.0":
+  version "9.2.4"
+  resolved "https://registry.nlark.com/@react-spring/animated/download/@react-spring/animated-9.2.4.tgz#062ecc0fdfef89f2541a42d8500428b70035f879"
+  integrity sha1-Bi7MD9/vifJUGkLYUAQotwA1+Hk=
+  dependencies:
+    "@react-spring/shared" "~9.2.0"
+    "@react-spring/types" "~9.2.0"
+
+"@react-spring/core@~9.2.0":
+  version "9.2.4"
+  resolved "https://registry.nlark.com/@react-spring/core/download/@react-spring/core-9.2.4.tgz#275a4a065e3a315a4f5fb28c9a6f62ce718c25d6"
+  integrity sha1-J1pKBl46MVpPX7KMmm9iznGMJdY=
+  dependencies:
+    "@react-spring/animated" "~9.2.0"
+    "@react-spring/shared" "~9.2.0"
+    "@react-spring/types" "~9.2.0"
+
+"@react-spring/rafz@~9.2.0":
+  version "9.2.4"
+  resolved "https://registry.nlark.com/@react-spring/rafz/download/@react-spring/rafz-9.2.4.tgz#44793e9adc14dd0dcd1573d094368af11a89d73a"
+  integrity sha1-RHk+mtwU3Q3NFXPQlDaK8RqJ1zo=
+
+"@react-spring/shared@~9.2.0":
+  version "9.2.4"
+  resolved "https://registry.nlark.com/@react-spring/shared/download/@react-spring/shared-9.2.4.tgz#f9cc66ac5308a77293330a18518e34121f4008c1"
+  integrity sha1-+cxmrFMIp3KTMwoYUY40Eh9ACME=
+  dependencies:
+    "@react-spring/rafz" "~9.2.0"
+    "@react-spring/types" "~9.2.0"
+
+"@react-spring/types@~9.2.0":
+  version "9.2.4"
+  resolved "https://registry.nlark.com/@react-spring/types/download/@react-spring/types-9.2.4.tgz#2365ce9d761f548a9adcb2cd68714bf26765a5de"
+  integrity sha1-I2XOnXYfVIqa3LLNaHFL8mdlpd4=
+
+"@react-spring/web@^9.2.4":
+  version "9.2.4"
+  resolved "https://registry.nlark.com/@react-spring/web/download/@react-spring/web-9.2.4.tgz#c6d5464a954bfd0d7bc90117050f796a95ebfa08"
+  integrity sha1-xtVGSpVL/Q17yQEXBQ95apXr+gg=
+  dependencies:
+    "@react-spring/animated" "~9.2.0"
+    "@react-spring/core" "~9.2.0"
+    "@react-spring/shared" "~9.2.0"
+    "@react-spring/types" "~9.2.0"
+
 "@remirror/core-constants@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@remirror/core-constants/-/core-constants-1.0.0.tgz#41be09140e2a040a6e63b555da808761d63f2ed1"

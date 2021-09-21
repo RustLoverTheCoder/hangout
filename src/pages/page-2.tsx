@@ -21,15 +21,17 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
   const { data: data2, status: status2 } = ping()
   console.log("data", data2, status2)
 
+  // const { data } = userLogin()
+  // console.log("data2", data)
+
   const mutation = useMutation(({ nickname }: userRegister) => userRegister(nickname), {
       onError: (error, variables, context) => {
         console.log("userRegister error:", error, variables, context)
       },
-      onSuccess: (data, variables, context) => {
+      onSuccess: async (data, variables, context) => {
 
         console.log("userRegister success:", data, variables, context)
-        // todo 请求 token
-        const res = queryClient.invalidateQueries("userLogin")
+        const res = await queryClient.invalidateQueries("userLogin")
         console.log("res", res)
       }
     }
@@ -38,7 +40,7 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
   return (
     <main>
       <div>{mutation.isError ? "error" : null}</div>
-      <h1 onClick={() => mutation.mutate({ nickname: "maxiang123456789" })}>SSR Page with Dogs</h1>
+      <h1 onClick={() => mutation.mutate({ nickname: "maxiang1" })}>SSR Page with Dogs</h1>
       <img alt="Happy dog" src={serverData.message} />
       <ReactQueryDevtools initialIsOpen={false} />
     </main>

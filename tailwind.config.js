@@ -12,8 +12,9 @@ module.exports = {
         18: "4.5rem",
         34: "8.5rem",
         55: "13.75rem",
-        110: '27.5rem',
-        170: '42.5rem',
+        95: "23.75rem",
+        110: "27.5rem",
+        170: "42.5rem"
       },
       colors: {
         "interactive-normal": "#b9bbbe",
@@ -21,22 +22,24 @@ module.exports = {
         muted: "#72767d",
         "header-primary": "#fff",
         "header-secondary": "#b9bbbe",
-        'header-primary-light': '#060607',
+        "header-primary-light": "#060607"
 
       },
       backgroundColor: {
-        background:'#fdd716',
+        background: "#fdd716",
         tertiary: "#202225",
         secondary: "#2f3136",
         primary: "#36393f",
         "modifier-selected": "rgba(79,84,92,0.32)",
         "message-bar": "#5564e9",
         "accent": "#4f545c",
-        "text-normal": "#dcddde"
+        "text-normal": "#dcddde",
+        "quite-black": "#23272a",
+        "brand": "#5865f2"
       },
       cursor: {
-        'zoom-in': 'zoom-in',
-        'zoom-out': 'zoom-out',
+        "zoom-in": "zoom-in",
+        "zoom-out": "zoom-out"
       }
     }
   },
