@@ -18,7 +18,7 @@ type DataProps = {
 const AppPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   return (
     <>
-      <Seo title="哔啵" />
+      <Seo title="阿瓦隆" />
       <ModalContainer />
       <BaseLayout>
         <ChannelLayout />

@@ -28,7 +28,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   }
   return (
     <HomeBgLayout>
-      <Seo title="哔啵" />
+      <Seo title="阿瓦隆" />
       <div className="w-full h-full flex justify-center items-center">
         <div className="container flex justify-center md:justify-start items-center px-6">
           {showInput ? <NickNameInput /> : (
