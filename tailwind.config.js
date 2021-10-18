@@ -13,8 +13,11 @@ module.exports = {
         34: "8.5rem",
         55: "13.75rem",
         95: "23.75rem",
+        100: "25rem",
+        102: "25.5rem",
         110: "27.5rem",
-        170: "42.5rem"
+        170: "42.5rem",
+        196: "49rem"
       },
       colors: {
         "interactive-normal": "#b9bbbe",
@@ -35,7 +38,8 @@ module.exports = {
         "accent": "#4f545c",
         "text-normal": "#dcddde",
         "quite-black": "#23272a",
-        "brand": "#5865f2"
+        "brand": "#5865f2",
+        "text-input-bg": "#313338"
       },
       cursor: {
         "zoom-in": "zoom-in",
