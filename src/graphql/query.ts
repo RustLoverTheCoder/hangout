@@ -1,7 +1,7 @@
 import { useQuery } from "react-query"
 import { request, gql } from "graphql-request"
 
-const endpoint = "/api/graphql"
+const endpoint = process.env.NODE_ENV === "development" ? `/api/graphql` : process.env.GATSBY_API_URL + "/graphql"
 
 export function ping() {
   const { status, data, error, isFetching } = useQuery("ping", async () => {

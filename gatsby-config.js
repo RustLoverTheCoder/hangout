@@ -1,6 +1,9 @@
 const languages = require("./src/locales/languages")
 const EN = require("./src/locales/en")
 const ZH = require("./src/locales/zh")
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 const { createProxyMiddleware } = require("http-proxy-middleware")
 
 module.exports = {

@@ -17,6 +17,8 @@ type DataProps = {
 
 const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
 
+  console.log("process", process.env.GATSBY_API_URL, process.env.NODE_ENV)
+
   const queryClient = useQueryClient()
 
   const { data: data2, status: status2 } = ping()
