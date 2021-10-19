@@ -1,6 +1,7 @@
 const languages = require("./src/locales/languages")
 const EN = require("./src/locales/en")
 const ZH = require("./src/locales/zh")
+const { createProxyMiddleware } = require("http-proxy-middleware")
 
 module.exports = {
   siteMetadata: {
@@ -12,9 +13,17 @@ module.exports = {
     EN,
     ZH
   },
-  proxy: {
-    prefix: "/api",
-    url: "http://127.0.0.1:8080/graphql"
+  developMiddleware: app => {
+    app.use(
+      "/api",
+      createProxyMiddleware({
+        target: "http://ec2-18-163-196-99.ap-east-1.compute.amazonaws.com:3000",
+        changeOrigin:true,
+        pathRewrite: {
+          "^/api": "",
+        },
+      })
+    )
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

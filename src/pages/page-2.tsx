@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from "react-query/devtools"
 import { useMutation, useQueryClient } from "react-query"
 import { ping, userLogin } from "../graphql/query"
 import { userRegister } from "../graphql/mutation"
+import { useEffect } from "react"
 
 type DataProps = {
   site: {
@@ -29,7 +30,6 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
         console.log("userRegister error:", error, variables, context)
       },
       onSuccess: async (data, variables, context) => {
-
         console.log("userRegister success:", data, variables, context)
         const res = await queryClient.invalidateQueries("userLogin")
         console.log("res", res)
