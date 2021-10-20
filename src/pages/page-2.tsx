@@ -42,6 +42,9 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
   return (
     <main>
       <div>{mutation.isError ? "error" : null}</div>
+      <div className="mt-10" />
+      <div className="w-100 h-10.5 bg-text-input-bg rounded border border-gray-600"></div>
+      <div className="mb-10" />
       <h1 onClick={() => mutation.mutate({ nickname: "maxiang1" })}>SSR Page with Dogs</h1>
       <img alt="Happy dog" src={serverData.message} />
       <ReactQueryDevtools initialIsOpen={false} />

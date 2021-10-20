@@ -22,11 +22,11 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             <div className="mt-5">
               <div className="mb-5">
                 <div className="mb-2 text-xs leading-4">电话号码</div>
-                <div className="w-full h-10.5 bg-text-input-bg rounded border border-gray-600"></div>
+                <div className="w-full h-10.5 bg-text-input-bg rounded border border-gray-600" />
               </div>
               <div>
                 <div className="mb-2 text-xs leading-4">验证码</div>
-                <div className="w-full h-10.5 bg-text-input-bg rounded border border-gray-600"></div>
+                <div className="w-full h-10.5 bg-text-input-bg rounded border border-gray-600" />
               </div>
               <Link
                 to={"/app"}
