@@ -4,6 +4,8 @@ import Seo from '../components/seo'
 import { Link } from 'gatsby'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import qrcode from '../images/qrcode.png'
+import HashLoader from "react-spinners/HashLoader"
+
 
 type DataProps = {
   site: {
@@ -102,7 +104,8 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             </form>
           </div>
           <div className="h-full w-60  justify-center items-center flex-col hidden md:flex">
-            <div className="w-44 h-44 mb-8 rounded">
+            <div className="w-44 h-44 mb-8 rounded flex justify-center items-center">
+              {/*<HashLoader color="#5865f2" size={50} />*/}
               <img src={qrcode} className="w-44 h-44 rounded" alt="" />
             </div>
             <h3 className="text-white mb-2 font-semibold text-2xl leading-7">通过二维码登录</h3>

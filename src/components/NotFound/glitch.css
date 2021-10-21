@@ -1,0 +1,52 @@
+.glitch-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.glitch {
+    @apply text-black;
+    @apply font-extrabold;
+    @apply relative;
+    @apply text-9xl;
+    @apply p-7;
+
+}
+
+.glitch::before, .glitch::after {
+    @apply p-7;
+    @apply text-black;
+    content: "404";
+    @apply absolute;
+    @apply w-full;
+    @apply h-full;
+    @apply overflow-hidden;
+    @apply top-0;
+    background-color: #f6f6f7;
+}
+
+.glitch::before {
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}
+
+.glitch::after {
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+}

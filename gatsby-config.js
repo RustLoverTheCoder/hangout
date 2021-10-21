@@ -1,10 +1,10 @@
-const languages = require("./src/locales/languages")
-const EN = require("./src/locales/en")
-const ZH = require("./src/locales/zh")
-require("dotenv").config({
+const languages = require('./src/locales/languages')
+const EN = require('./src/locales/en')
+const ZH = require('./src/locales/zh')
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-const { createProxyMiddleware } = require("http-proxy-middleware")
+const { createProxyMiddleware } = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
@@ -14,16 +14,16 @@ module.exports = {
     siteUrl: `https://hangoutmain.gatsbyjs.io/`,
     languages,
     EN,
-    ZH
+    ZH,
   },
-  developMiddleware: app => {
+  developMiddleware: (app) => {
     app.use(
-      "/api",
+      '/api',
       createProxyMiddleware({
-        target: "http://ec2-18-163-196-99.ap-east-1.compute.amazonaws.com:3000",
-        changeOrigin:true,
+        target: 'http://ec2-18-163-196-99.ap-east-1.compute.amazonaws.com:3000',
+        changeOrigin: true,
         pathRewrite: {
-          "^/api": "",
+          '^/api': '',
         },
       })
     )
@@ -31,13 +31,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-sass',
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -50,28 +51,28 @@ module.exports = {
         background_color: `#36393f`,
         theme_color: `#36393f`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
-      }
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
     },
     `gatsby-plugin-gatsby-cloud`,
-    "gatsby-plugin-use-query-params",
+    'gatsby-plugin-use-query-params',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
-        devMode: true
-      }
+        devMode: true,
+      },
     },
     {
-      resolve: "gatsby-plugin-i18n",
+      resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyForNull: "any",
+        langKeyForNull: 'any',
         langKeyDefault: languages.defaultLangKey,
         useLangKeyLayout: false,
-        prefixDefault: false
-      }
-    }
-  ]
+        prefixDefault: false,
+      },
+    },
+  ],
 }
