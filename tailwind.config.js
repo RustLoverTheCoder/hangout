@@ -45,6 +45,8 @@ module.exports = {
         'quite-black': '#23272a',
         brand: '#5865f2',
         'text-input-bg': '#313338',
+        'saturation-factor': '#3ba55d',
+        'header-secondary': '#b9bbbe',
       },
       borderColor: {
         danger: '#ed4245',
