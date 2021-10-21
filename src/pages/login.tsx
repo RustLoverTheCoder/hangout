@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { PageProps } from 'gatsby'
 import Seo from '../components/seo'
-import { Link } from 'gatsby'
+import { navigate } from 'gatsby'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import qrcode from '../images/qrcode.png'
 import HashLoader from "react-spinners/HashLoader"
@@ -25,9 +25,9 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     watch,
     formState: { errors },
   } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
-
-  console.log('errors', errors)
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    navigate('/app')
+  }
 
   return (
     <div className="w-full h-full bg-brand flex justify-center items-center">
