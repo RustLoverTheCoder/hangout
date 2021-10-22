@@ -10,7 +10,7 @@
     "@remirror/react": "^1.0.9",
     "autoprefixer": "^10.3.4",
     "gatsby": "^4.1.0-next.0",
-    "gatsby-plugin-gatsby-cloud": "^4.0.0-zz-next.1",
+    "gatsby-plugin-gatsby-cloud": "^4.1.0-next.0",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-manifest": "^3.13.0",
