@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        3.75: '0.9375rem',
         4.5: '1.125rem',
         5.5: '1.375rem',
         7.5: '1.875rem',
@@ -31,6 +32,7 @@ module.exports = {
         'header-primary-light': '#060607',
         danger: '#ed4245',
         invite: '#72767d',
+        'channel-default': '#8e9297',
       },
       backgroundColor: {
         background: '#fdd716',
@@ -50,6 +52,9 @@ module.exports = {
       },
       borderColor: {
         danger: '#ed4245',
+      },
+      fontSize: {
+        xxs: '0.625rem',
       },
       cursor: {
         'zoom-in': 'zoom-in',
