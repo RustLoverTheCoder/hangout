@@ -11,6 +11,7 @@ module.exports = {
         7.5: '1.875rem',
         10.5: '2.625rem',
         13: '3.25rem',
+        15.5: '3.875rem',
         18: '4.5rem',
         27.5: '6.875rem',
         34: '8.5rem',
@@ -50,6 +51,7 @@ module.exports = {
         'text-input-bg': '#313338',
         'saturation-factor': '#3ba55d',
         'header-secondary': '#b9bbbe',
+        'modifier-accent': 'hsla(0,0%,100%,0.06)',
       },
       borderColor: {
         danger: '#ed4245',
