@@ -15,6 +15,7 @@ module.exports = {
         27.5: '6.875rem',
         34: '8.5rem',
         55: '13.75rem',
+        90: '22.5rem',
         95: '23.75rem',
         100: '25rem',
         102: '25.5rem',
@@ -52,6 +53,7 @@ module.exports = {
       },
       borderColor: {
         danger: '#ed4245',
+        'modifier-accent': 'hsla(0,0%,100%,0.06)',
       },
       fontSize: {
         xxs: '0.625rem',
