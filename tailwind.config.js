@@ -35,6 +35,7 @@ module.exports = {
         danger: '#ed4245',
         invite: '#72767d',
         'channel-default': '#8e9297',
+        people: '#36393f',
       },
       backgroundColor: {
         background: '#fdd716',
