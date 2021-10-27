@@ -37,14 +37,19 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
   })
 
   return (
-    <main className="w-full h-full bg-red-500">
-      {/*<div>{mutation.isError ? "error" : null}</div>*/}
-      {/*<div className="mt-10" />*/}
-      {/*<div className="w-100 h-10.5 bg-text-input-bg rounded border border-gray-600"></div>*/}
-      {/*<div className="mb-10" />*/}
-      {/*<h1 onClick={() => mutation.mutate({ nickname: "maxiang1" })}>SSR Page with Dogs</h1>*/}
-      {/*<img alt="Happy dog" src={serverData.message} />*/}
-      {/*<ReactQueryDevtools initialIsOpen={false} />*/}
+    <main className="w-full h-full">
+      <div>{mutation.isError ? 'error' : null}</div>
+      <h1 onClick={() => mutation.mutate({ nickname: 'maxiang1' })}>SSR Page with Dogs</h1>
+      <img alt="Happy dog" src={serverData.message} />
+      <div className="text-base font-normal">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-base font-medium">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-base font-semibold">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-base font-bold">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-lg">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-xl">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-2xl">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="text-3xl">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <ReactQueryDevtools initialIsOpen={false} />
     </main>
   )
 }
