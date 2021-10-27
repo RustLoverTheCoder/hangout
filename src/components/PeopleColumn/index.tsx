@@ -10,6 +10,11 @@ const PeopleColumn = () => {
         </h2>
         <People />
         <People />
+        <People />
+        <People />
+        <People />
+        <People />
+        <People />
       </div>
     </div>
   )

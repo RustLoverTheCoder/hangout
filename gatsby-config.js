@@ -8,7 +8,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: `再度相会的地方`,
+    title: `让少数派变成同好圈`,
     description: `在这里，您可以加入校园俱乐部、游戏群组，或是世界级艺术社区。在这里，您也能邀三五好友一起共度欢乐时光。在这里，您可以轻而易举地每日谈天说地，时常消遣娱乐。`,
     author: `pupu`,
     siteUrl: `https://hangoutmain.gatsbyjs.io/`,

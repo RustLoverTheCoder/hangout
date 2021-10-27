@@ -1,11 +1,10 @@
-import * as React from "react"
-import { PageProps } from "gatsby"
-import HomeBgLayout from "../layouts/HomeBgLayout"
-import Seo from "../components/seo"
-import { Link } from "gatsby"
+import * as React from 'react'
+import { PageProps } from 'gatsby'
+import HomeBgLayout from '../layouts/HomeBgLayout'
+import Seo from '../components/seo'
+import { Link } from 'gatsby'
 
-import NickNameInput from "../components/NickNameInput"
-
+import NickNameInput from '../components/NickNameInput'
 
 type DataProps = {
   site: {
@@ -26,13 +25,16 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   // }
   return (
     <HomeBgLayout>
-      <Seo title="阿瓦隆" />
+      <Seo title="同好圈" />
       <div className="w-full h-full flex justify-center items-center">
         <div className="container flex justify-center md:justify-start items-center px-6">
-          {showInput ? <NickNameInput /> : (
+          {showInput ? (
+            <NickNameInput />
+          ) : (
             <Link
-              to={"/login"}
-              className="bg-quite-black text-xl text-white px-8 py-4 mt-6 rounded-full font-semibold">
+              to={'/login'}
+              className="bg-quite-black text-xl text-white px-8 py-4 mt-6 rounded-full font-semibold"
+            >
               在你的浏览器中打开app
             </Link>
           )}

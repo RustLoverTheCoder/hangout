@@ -1,10 +1,10 @@
-import * as React from "react"
-import { PageProps } from "gatsby"
-import { ModalContainer } from 'reoverlay';
+import * as React from 'react'
+import { PageProps } from 'gatsby'
+import { ModalContainer } from 'reoverlay'
 
-import BaseLayout from "../layouts/baseLayout"
+import BaseLayout from '../layouts/baseLayout'
 import ChannelLayout from '../layouts/ChannelLayout'
-import ChatLayout from "../layouts/ChatLayout"
+import ChatLayout from '../layouts/ChatLayout'
 import Seo from '../components/seo'
 
 type DataProps = {
@@ -13,12 +13,10 @@ type DataProps = {
   }
 }
 
-
-
 const AppPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   return (
     <>
-      <Seo title="阿瓦隆" />
+      <Seo title="同好圈" />
       <ModalContainer />
       <BaseLayout>
         <ChannelLayout />

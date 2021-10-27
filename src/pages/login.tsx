@@ -4,8 +4,7 @@ import Seo from '../components/seo'
 import { navigate } from 'gatsby'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import qrcode from '../images/qrcode.png'
-import HashLoader from "react-spinners/HashLoader"
-
+import HashLoader from 'react-spinners/HashLoader'
 
 type DataProps = {
   site: {
@@ -31,7 +30,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 
   return (
     <div className="w-full h-full bg-brand flex justify-center items-center">
-      <Seo title="阿瓦隆" />
+      <Seo title="同好圈" />
       <div className="container flex justify-center items-center px-4 sm:mx-0">
         <div className="w-full sm:w-auto h-102 md:w-196 md:h-102 bg-primary text-muted p-8 rounded-md flex justify-between">
           <div className="h-full w-full sm:w-100 flex flex-col">
