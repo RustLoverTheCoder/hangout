@@ -6,7 +6,8 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import { useMutation, useQueryClient } from 'react-query'
 import { ping, userLogin } from '../graphql/query'
 import { userRegister } from '../graphql/mutation'
-import { useEffect } from 'react'
+import { Reoverlay, ModalContainer } from 'reoverlay'
+import { UserProfile } from '../components/Modals'
 
 type DataProps = {
   site: {
@@ -40,8 +41,15 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
     <main className="w-full h-full">
       <div>{mutation.isError ? 'error' : null}</div>
       <h1 onClick={() => mutation.mutate({ nickname: 'maxiang1' })}>SSR Page with Dogs</h1>
-      <img alt="Happy dog" src={serverData.message} />
-      <div className="text-base font-normal">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <img alt="Happy dog" className="w-40" src={serverData.message} />
+      <div
+        className="text-base font-normal"
+        onClick={() => {
+          Reoverlay.showModal(UserProfile)
+        }}
+      >
+        监狱你啊实打实给大家回复是德国萨v更多
+      </div>
       <div className="text-base font-medium">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-base font-semibold">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-base font-bold">监狱你啊实打实给大家回复是德国萨v更多</div>
@@ -49,6 +57,7 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
       <div className="text-xl">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-2xl">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-3xl">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <ModalContainer />
       <ReactQueryDevtools initialIsOpen={false} />
     </main>
   )
