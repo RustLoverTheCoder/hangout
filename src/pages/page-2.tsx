@@ -57,6 +57,17 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
       <div className="text-xl">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-2xl">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-3xl">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div className="w-100 h-auto">
+        <div className="w-full h-auto flex items-center border-gray-600 focus:border-blue-500 bg-text-input-bg rounded border">
+          <input className="flex-1 h-10.5 text-white p-2.5 bg-text-input-bg outline-none" />
+          <div className="w-px h-10.5 flex">
+            <div className="w-px flex-1 my-2 bg-white flex-shrink-0" />
+          </div>
+          <div className="h-10.5 px-2 text-header-primary text-sm font-semibold flex justify-center items-center cursor-pointer">
+            获取验证码
+          </div>
+        </div>
+      </div>
       <ModalContainer />
       <ReactQueryDevtools initialIsOpen={false} />
     </main>
