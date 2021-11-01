@@ -87,16 +87,16 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                 <div
                   className={`${
                     errors.code ? 'border-danger' : ' border-gray-600 focus:border-blue-500'
-                  } w-full h-auto flex items-center bg-text-input-bg rounded border`}
+                  } w-full h-auto flex items-center bg-text-input-bg rounded border overflow-hidden`}
                 >
                   <input
                     {...register('code', { required: true, pattern: /^\d{4}$/ })}
                     className="flex-1 h-10.5 text-white p-2.5 bg-text-input-bg outline-none"
                   />
                   <div className="w-px h-10.5 flex">
-                    <div className="w-px flex-1 my-2 bg-white flex-shrink-0" />
+                    <div className="w-px flex-1 my-2 bg-gray-600 flex-shrink-0" />
                   </div>
-                  <div className="h-10.5 px-2 text-header-primary text-sm font-semibold flex justify-center items-center cursor-pointer">
+                  <div className="h-10.5 px-2 text-gray-600 hover:text-header-primary text-sm font-semibold flex justify-center items-center cursor-pointer">
                     获取验证码
                   </div>
                 </div>

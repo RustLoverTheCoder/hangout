@@ -8,6 +8,7 @@ import { ping, userLogin } from '../graphql/query'
 import { userRegister } from '../graphql/mutation'
 import { Reoverlay, ModalContainer } from 'reoverlay'
 import { UserProfile } from '../components/Modals'
+import useStore from '../stores/index'
 
 type DataProps = {
   site: {
@@ -16,6 +17,8 @@ type DataProps = {
 }
 
 const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
+  const bears = useStore((state) => state.bears)
+  const increasePopulation = useStore((state) => state.increasePopulation)
   console.log('process', process.env.GATSBY_API_URL, process.env.NODE_ENV)
 
   const queryClient = useQueryClient()
@@ -50,7 +53,11 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
       >
         监狱你啊实打实给大家回复是德国萨v更多
       </div>
-      <div className="text-base font-medium">监狱你啊实打实给大家回复是德国萨v更多</div>
+      <div>{bears}</div>
+
+      <div className="text-base font-medium cursor-pointer" onClick={() => increasePopulation()}>
+        监狱你啊实打实给大家回复是德国萨v更多
+      </div>
       <div className="text-base font-semibold">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-base font-bold">监狱你啊实打实给大家回复是德国萨v更多</div>
       <div className="text-lg">监狱你啊实打实给大家回复是德国萨v更多</div>
