@@ -17,8 +17,10 @@ type DataProps = {
 }
 
 const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
-  const bears = useStore((state) => state.bears)
+  const bears = useStore((state: any) => state.bears)
+  const userProfile = useStore((state: any) => state.userProfile)
   const increasePopulation = useStore((state) => state.increasePopulation)
+  const changeUserProfile = useStore((state) => state.changeUser)
   console.log('process', process.env.GATSBY_API_URL, process.env.NODE_ENV)
 
   const queryClient = useQueryClient()
@@ -45,6 +47,8 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
       <div>{mutation.isError ? 'error' : null}</div>
       <h1 onClick={() => mutation.mutate({ nickname: 'maxiang1' })}>SSR Page with Dogs</h1>
       <img alt="Happy dog" className="w-40" src={serverData.message} />
+      <div>{userProfile?.id}</div>
+      <div>{userProfile?.name}</div>
       <div
         className="text-base font-normal"
         onClick={() => {
@@ -55,7 +59,13 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ serverData }) => {
       </div>
       <div>{bears}</div>
 
-      <div className="text-base font-medium cursor-pointer" onClick={() => increasePopulation()}>
+      <div
+        className="text-base font-medium cursor-pointer"
+        onClick={() => {
+          increasePopulation()
+          changeUserProfile({ id: '1', name: 'maxiang' })
+        }}
+      >
         监狱你啊实打实给大家回复是德国萨v更多
       </div>
       <div className="text-base font-semibold">监狱你啊实打实给大家回复是德国萨v更多</div>

@@ -4,7 +4,10 @@ import Seo from '../components/seo'
 import { navigate } from 'gatsby'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import qrcode from '../images/qrcode.png'
-import HashLoader from 'react-spinners/HashLoader'
+// import HashLoader from 'react-spinners/HashLoader'
+// import { sendSms } from '../graphql/query'
+import toast, { Toaster } from 'react-hot-toast'
+import { PHONE_RE } from '../constants'
 
 type DataProps = {
   site: {
@@ -24,8 +27,23 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     watch,
     formState: { errors },
   } = useForm<Inputs>()
+
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     navigate('/app')
+  }
+
+  const handleGetSms = () => {
+    const phone = watch('phone')
+    if (!phone) {
+      toast.error('请填写手机号')
+      return false
+    }
+    const regex = PHONE_RE
+    const phoneRegArray = phone?.match(regex) || []
+    if (phoneRegArray.length > 0) {
+    } else {
+      toast.error('手机号格式错误，请重新填写')
+    }
   }
 
   return (
@@ -58,7 +76,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                 <input
                   {...register('phone', {
                     required: true,
-                    pattern: /^1[3456789]\d{9}$/,
+                    pattern: PHONE_RE,
                   })}
                   className={`${
                     errors.phone ? 'border-danger' : 'border-gray-600 focus:border-blue-500'
@@ -96,7 +114,10 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                   <div className="w-px h-10.5 flex">
                     <div className="w-px flex-1 my-2 bg-gray-600 flex-shrink-0" />
                   </div>
-                  <div className="h-10.5 px-2 text-gray-600 hover:text-header-primary text-sm font-semibold flex justify-center items-center cursor-pointer">
+                  <div
+                    className="h-10.5 px-2 text-gray-600 hover:text-header-primary text-sm font-semibold flex justify-center items-center cursor-pointer"
+                    onClick={() => handleGetSms()}
+                  >
                     获取验证码
                   </div>
                 </div>
@@ -124,6 +145,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   )
 }
