@@ -1,13 +1,12 @@
 import * as React from 'react'
-import { PageProps } from 'gatsby'
+import { navigate, PageProps } from 'gatsby'
 import Seo from '../components/seo'
-import { navigate } from 'gatsby'
-import { useForm, SubmitHandler } from 'react-hook-form'
+import { SubmitHandler, useForm } from 'react-hook-form'
 import qrcode from '../images/qrcode.png'
 // import HashLoader from 'react-spinners/HashLoader'
 // import { sendSms } from '../graphql/query'
-import toast, { Toaster } from 'react-hot-toast'
-import { PHONE_RE } from '../constants'
+import Toast from '../components/Toast'
+import { CODE_RE, PHONE_RE } from '../constants'
 
 type DataProps = {
   site: {
@@ -35,14 +34,13 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   const handleGetSms = () => {
     const phone = watch('phone')
     if (!phone) {
-      toast.error('请填写手机号')
+      Toast.error('请填写手机号')
       return false
     }
-    const regex = PHONE_RE
-    const phoneRegArray = phone?.match(regex) || []
+    const phoneRegArray = phone?.match(PHONE_RE) || []
     if (phoneRegArray.length > 0) {
     } else {
-      toast.error('手机号格式错误，请重新填写')
+      Toast.error('手机号格式错误，请重新填写')
     }
   }
 
@@ -108,7 +106,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                   } w-full h-auto flex items-center bg-text-input-bg rounded border overflow-hidden`}
                 >
                   <input
-                    {...register('code', { required: true, pattern: /^\d{4}$/ })}
+                    {...register('code', { required: true, pattern: CODE_RE })}
                     className="flex-1 h-10.5 text-white p-2.5 bg-text-input-bg outline-none"
                   />
                   <div className="w-px h-10.5 flex">
@@ -145,7 +143,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
         </div>
       </div>
-      <Toaster />
+      <Toast.Toaster />
     </div>
   )
 }
