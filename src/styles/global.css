@@ -35,6 +35,7 @@
     @apply w-full;
     @apply bg-transparent;
   }
+
   button {
 
   }
@@ -48,4 +49,17 @@
 ::-webkit-scrollbar {
   width: 0;
   height: 0;
+}
+
+
+input:-webkit-autofill {
+  -webkit-animation: autofill-fix 1s infinite !important;
+  /* 选择历史记录的文字颜色*/
+  -webkit-text-fill-color: #ffffff;
+  -webkit-transition: background-color 50000s ease-in-out 0s !important;
+  transition: background-color 50000s ease-in-out 0s !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  /* 选择历史记录的背景颜色 */
+  -webkit-box-shadow: 0 0 0 1000px #313338 inset !important;
 }

@@ -7,6 +7,9 @@ import qrcode from '../images/qrcode.png'
 // import { sendSms } from '../graphql/query'
 import Toast from '../components/Toast'
 import { CODE_RE, PHONE_RE } from '../constants'
+import { ReactQueryDevtools } from 'react-query/devtools'
+import { useMutation } from 'react-query'
+import { getSms, login } from '../graphql/mutation'
 
 type DataProps = {
   site: {
@@ -27,8 +30,33 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     formState: { errors },
   } = useForm<Inputs>()
 
+  const mutation = useMutation(({ phone }: { phone: string }) => getSms(phone), {
+    onError: (error, variables, context) => {
+      Toast.error('服务器错误，清稍后再试')
+    },
+    onSuccess: async (data, variables, context) => {
+      Toast.success(data.sendSms)
+    },
+  })
+
+  const loginMutation = useMutation(
+    ({ phone, code }: { phone: string; code: string }) => login(phone, code),
+    {
+      onError: (error, variables, context) => {
+        Toast.error('服务器错误，清稍后再试')
+      },
+      onSuccess: async (data, variables, context) => {
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('accessToken', data.login.accessToken)
+          localStorage.setItem('refreshToken', data.login.refreshToken)
+          localStorage.setItem('expires', data.login.expires)
+        }
+        navigate('/app')
+      },
+    }
+  )
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    navigate('/app')
+    loginMutation.mutate({ phone: data.phone, code: data.code })
   }
 
   const handleGetSms = () => {
@@ -39,6 +67,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     }
     const phoneRegArray = phone?.match(PHONE_RE) || []
     if (phoneRegArray.length > 0) {
+      mutation.mutate({ phone: phone })
     } else {
       Toast.error('手机号格式错误，请重新填写')
     }

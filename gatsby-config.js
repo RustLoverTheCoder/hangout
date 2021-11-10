@@ -20,7 +20,7 @@ module.exports = {
     app.use(
       '/api',
       createProxyMiddleware({
-        target: 'http://ec2-18-163-196-99.ap-east-1.compute.amazonaws.com:3000',
+        target: 'http://localhost:3000',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '',
