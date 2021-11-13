@@ -12,7 +12,7 @@
 //   const { createRedirect, createPage } = actions
 //   createPage({
 //     path: `/channel/123`,
-//     component: path.resolve(`./src/pages/index.tsx`),
+//     component: path.resolve(`./src/pages/index.ts`),
 //     ownerNodeId: `123456`,
 //     // The context is passed as props to the component as well
 //     // as into the component's GraphQL query.

@@ -22,6 +22,7 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         <ChannelLayout />
         <ChatLayout />
       </BaseLayout>
+      <ModalContainer />
     </>
   )
 }
