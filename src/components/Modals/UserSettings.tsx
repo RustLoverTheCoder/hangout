@@ -72,11 +72,17 @@ const UserSettings = () => {
                       okText: '登出',
                       okButtonColor: '#ed4245',
                       onConfirm: () => {
+                        if (typeof window === 'undefined') {
+                          localStorage.removeItem('accessToken')
+                          localStorage.removeItem('refreshToken')
+                          localStorage.removeItem('expires')
+                        }
                         navigate('/login')
                       },
                     })
+                  } else {
+                    setSelect(key)
                   }
-                  setSelect(key)
                 }}
                 style={item.style}
               />
