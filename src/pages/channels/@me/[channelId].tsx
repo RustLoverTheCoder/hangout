@@ -3,12 +3,10 @@ import { PageProps } from 'gatsby'
 
 const Channel: React.FC<PageProps> = (props) => {
   console.log(props)
-  const { serverId, channelId } = props.params
+  const { channelId } = props.params
   return (
     <div>
-      <h1>
-        Channel:{serverId},{channelId}
-      </h1>
+      <h1>Channel:{channelId}</h1>
     </div>
   )
 }

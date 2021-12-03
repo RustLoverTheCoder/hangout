@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { PageProps } from 'gatsby'
-import { ModalContainer } from 'reoverlay'
 
 import BaseLayout from '../layouts/baseLayout'
 import ChannelLayout from '../layouts/ChannelLayout'
@@ -17,12 +16,10 @@ const AppPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   return (
     <>
       <Seo title="同好圈" />
-      <ModalContainer />
       <BaseLayout>
         <ChannelLayout />
         <ChatLayout />
       </BaseLayout>
-      <ModalContainer />
     </>
   )
 }

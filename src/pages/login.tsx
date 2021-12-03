@@ -7,7 +7,6 @@ import qrcode from '../images/qrcode.png'
 // import { sendSms } from '../graphql/query'
 import Toast from '../components/Toast'
 import { CODE_RE, PHONE_RE } from '../constants'
-import { ReactQueryDevtools } from 'react-query/devtools'
 import { useMutation } from 'react-query'
 import { getSms, login } from '../graphql/mutation'
 
@@ -172,7 +171,6 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
         </div>
       </div>
-      <Toast.Toaster />
     </div>
   )
 }
