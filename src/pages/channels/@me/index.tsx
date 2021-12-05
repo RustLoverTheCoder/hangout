@@ -2,14 +2,13 @@ import * as React from 'react'
 import { PageProps } from 'gatsby'
 import BaseLayout from '../../../layouts/baseLayout'
 import ChannelLayout from '../../../layouts/ChannelLayout'
-import ChatLayout from '../../../layouts/ChatLayout'
+import PersonalLayout from '../../../layouts/PersonalLayout'
 
 const Channel: React.FC<PageProps> = (props) => {
-  const { serverId } = props.params
   return (
     <BaseLayout>
       <ChannelLayout />
-      <ChatLayout />
+      <PersonalLayout />
     </BaseLayout>
   )
 }

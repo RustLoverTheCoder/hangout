@@ -1,13 +1,16 @@
 import * as React from 'react'
-import { PageProps } from 'gatsby'
+import { navigate, PageProps } from 'gatsby'
+import BaseLayout from '../../../layouts/baseLayout'
+import ChannelLayout from '../../../layouts/ChannelLayout'
+import PersonalLayout from '../../../layouts/PersonalLayout'
 
 const Channel: React.FC<PageProps> = (props) => {
-  console.log(props)
   const { channelId } = props.params
   return (
-    <div>
-      <h1>Channel:{channelId}</h1>
-    </div>
+    <BaseLayout>
+      <ChannelLayout />
+      <PersonalLayout />
+    </BaseLayout>
   )
 }
 
