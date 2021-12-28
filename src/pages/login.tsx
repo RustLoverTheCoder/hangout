@@ -138,7 +138,7 @@ const LoginPage: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                     className="flex-1 h-10.5 text-white p-2.5 bg-text-input-bg outline-none"
                   />
                   <div className="w-px h-10.5 flex">
-                    <div className="w-px flex-1 my-2 bg-gray-600 flex-shrink-0" />
+                    <div className="w-px flex-1 my-2 bg-gray-600 shrink-0" />
                   </div>
                   <div
                     className="h-10.5 px-2 text-gray-600 hover:text-header-primary text-sm font-semibold flex justify-center items-center cursor-pointer"

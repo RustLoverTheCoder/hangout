@@ -6,7 +6,7 @@ const User = () => {
   return (
     <div className="ml-2 relative">
       <div className="flex rounded h-10.5 px-2 hover:bg-modifier-selected items-center text-channel-default hover:text-white">
-        <div className="w-8 h-8 mr-3 flex-shrink-0 flex justify-center items-center">
+        <div className="w-8 h-8 mr-3 shrink-0 flex justify-center items-center">
           <img src={dog} alt="" className="w-8 h-8 rounded-full relative" />
         </div>
         <div className="truncate flex-1">
